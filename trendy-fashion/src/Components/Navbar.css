@@ -1,0 +1,107 @@
+#Navbar{
+    width: 100%;
+    
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+#NavbarTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 100px;
+    font-size: 13px;
+}
+#NavbarTop ul{
+    display: flex;
+    gap: 10px;
+}
+#NavbarTop li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li{
+    font-size: 10px;
+}
+#NavbarTop li:nth-child(3){
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+#NavbarTop li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#NavbarBottom{
+    border:1px solid black;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+#NavBotLi{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
+    
+}
+#NavBotLi li{
+    list-style: none;
+    font-size: 14px;
+}
+ label:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+#NavBotLi input{
+    width: 80%;
+    border-radius: 15px;
+    height: 130%;
+}
+#NavbotList:hover{
+    font-weight: bold;
+}
+.dropdown{
+    display: flex;
+    gap: 0px 10px;
+    font-size: 2px;
+    
+}
+.dropdown ul{
+    align-items: flex-start;
+}
+.dropdown{
+    font-size: 5px;
+}
+.dropdown li:hover{
+    text-decoration: underline;
+}
+.firstElement{
+    font-weight: bold;
+    padding: 4px 0px;
+    font-size: 1px;
+}
+@media   (max-width :1026px) and (min-width:760px) {
+    #Navbar{
+        width: 100%;
+        background-color: red;
+        margin: 0px 0px;
+    }
+    #NavbarTop{
+        padding: 0px 0px;
+       
+    }
+    #NavbarBottom{
+        padding: 0px 0px;
+    }
+    .dropdown{
+        display: flex;
+        gap: 0px 0px;
+        font-size: 1px;
+        width: 100%;
+        
+    }
+}
