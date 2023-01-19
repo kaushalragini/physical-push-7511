@@ -3,6 +3,16 @@ img:hover{
     transform: scale(1.03);
     transition: 0.3s;
 }
+
+@media screen and (max-width: 1260px ) {
+    .imgdiv img{
+      max-width: 34%;
+    }
+    .imgdiv4 img{
+        max-width: 25%;
+    }
+}
+ 
 .scrollbtn{
         position: fixed;
         border-radius: 50%;

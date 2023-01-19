@@ -4,8 +4,7 @@ import { useState, useEffect } from 'react';
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
-
-
+import { NavLink } from 'react-router-dom';
 const HomePage = () => {
 
   useEffect(() => {
@@ -78,7 +77,6 @@ const HomePage = () => {
 
   return (
     <>
-      
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {B1.map(el => (
           <Slide >
@@ -121,7 +119,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Fashionation-Coupon-header.gif" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv' style={{ display: 'flex' }}>
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-Extra30-480x6001.gif" alt="" />
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-1950-480x6001.gif" alt="" />
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-FootwearFiesta-480x6001.gif" alt="" />
@@ -170,7 +168,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv' style={{ display: 'flex' }}>
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-shopearn5cashback.jpg" alt="" />
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-relianceone.jpg" alt="" />
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-referearn1500.jpg" alt="" />
@@ -181,7 +179,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-sponsorbrands-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B6.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -191,7 +189,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-AJIOexclusive-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B7.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -216,7 +214,7 @@ const HomePage = () => {
       </div>
 
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B9.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -257,7 +255,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-ethnicwear-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B12.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -281,7 +279,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-footwear-accessories-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B14.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -291,7 +289,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-hiddengems-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B15.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -301,7 +299,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-kidswear-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B16.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -311,7 +309,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-topshelf-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B17.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -321,7 +319,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP-classicbrands-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B18.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -331,7 +329,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-home-header.jpg" alt="" />
       </div>
 
-      <div style={{ display: 'flex' }}>
+      <div className='imgdiv4'  style={{ display: 'flex' }}>
         {B19.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -372,7 +370,10 @@ const HomePage = () => {
           <div style={{ display: 'flex' }}>
             {B21.map(el => (<>
               <div style={{ textAlign: 'center' }}>
+
+              <NavLink to={el.nav}>
                 <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
+                </NavLink>
                 <div style={{ padding: '5px' }}>
                   <img style={{ height: '250px', width: '220px' }} key={el.id} alt="" src={el.photo} />
                 </div>
