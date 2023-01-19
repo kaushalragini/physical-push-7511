@@ -6,7 +6,7 @@ const MyAccount = () => {
     return (
         <Box >
 
-            <Box id="MyAccount_Box" >
+            <Box id="MyAccount_Box">
 
                 <Box className="MyAccount_left" >
                     <Heading size="md" marginBottom="15px" >My Account</Heading>
