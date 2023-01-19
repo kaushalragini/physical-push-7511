@@ -7,9 +7,8 @@ import {
   AccordionIcon,
   Box
 } from '@chakra-ui/react'
-import { Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import SeprateCategory from './SeprateCategory'
 const Filter = () => {
-
   return (
     <div className='fliterDiv'>
       Filter
@@ -39,9 +38,16 @@ const Filter = () => {
                     <input type="checkbox" />
                     <label >Men</label>
                   </Box>
+                  <Box>
+                    <input type="checkbox" />
+                    <label >Women</label>
+                  </Box>
+                  <Box>
+                    <input type="checkbox" />
+                    <label >Kids</label>
+                  </Box>
                 </AccordionPanel>
               </AccordionItem>
-
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -52,10 +58,30 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >b</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >c</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >d</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >e</label>
+                  </div>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -70,10 +96,34 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
                 </AccordionPanel>
               </AccordionItem>
 
@@ -87,10 +137,30 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -105,13 +175,32 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
                 </AccordionPanel>
               </AccordionItem>
-
               <AccordionItem>
                 <h2>
                   <AccordionButton>
@@ -122,10 +211,34 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat.
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >a</label>
+                  </div>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -142,10 +255,9 @@ const Filter = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat.
+            Please select upto 3 categories to view more filters
+            <SeprateCategory />
+
           </AccordionPanel>
         </AccordionItem>
       </Accordion>

@@ -76,6 +76,7 @@ const Navbar = () => {
                   <HomeKitchen />
                 </PopoverContent>
               </Popover>
+
               <Popover matchWidth={false} trigger="hover">
                 <PopoverTrigger>
                 <Input placeholder='Search AJIO'  />
@@ -92,7 +93,7 @@ const Navbar = () => {
         
           <Image paddingBottom ="10px" src="https://assets.ajio.com/static/img/wishlistIcon.svg" />
           
-         
+
           <Image src="https://cdn-icons-png.flaticon.com/512/71/71200.png" style={{width:"3%",height:"4%"}} />
          
           </Hide>
