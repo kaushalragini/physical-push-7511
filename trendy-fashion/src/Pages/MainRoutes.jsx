@@ -3,10 +3,9 @@ import { Routes, Route } from "react-router-dom"
 import HomePage from "./HomePage"
 import Login from './Login'
 import ProductPage from './ProductPage'
+import MyAccount from './MyAccount/MyAccount'
 import MenHomePage from './MenHomePage'
 import WomenHomePage from './WomenHomePage'
-
-
 const MainRoutes = () => {
     return (
         <Routes>
@@ -16,6 +15,7 @@ const MainRoutes = () => {
             <Route path='/womenpage' element={<WomenHomePage />} />
             <Route path='/payment' element={""} />
             <Route path='/men/:param' element={<ProductPage />} />
+            <Route path='/myAccount' element={<MyAccount/>} />
         </Routes>
     )
 }

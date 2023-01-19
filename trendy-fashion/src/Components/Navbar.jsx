@@ -6,6 +6,8 @@ import Women from './Women';
 import Kids from './Kids';
 import Indie from './Indie';
 import HomeKitchen from './HomeKitchen';
+import Sigin from "../Pages/Sigin/Sigin";
+import { Link } from 'react-router-dom';
 // import BasicUsage from './SignUp';
 import DrawerExample from './Drawer';
 import SearchInput from './SearchInput';
@@ -18,6 +20,8 @@ const Navbar = () => {
     <Box id='Navbar' >
         <Box id='NavbarTop' >
              <ul>
+             <Link to='/myAccount' ><li>MyAccount</li></Link>
+                <li><Sigin/></li>
                 <li>SignUp/Login</li>
                 <li>Customer Care</li>
                 <li>Visit AJIOLUXE</li>

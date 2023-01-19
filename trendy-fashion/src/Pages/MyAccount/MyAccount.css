@@ -1,0 +1,39 @@
+* {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #MyAccount_Box {
+    height: 550px;
+    margin: auto;
+    /* background-color: white;
+    color: black; */
+    display: flex;
+  }
+  .MyAccount_left {
+    border: 1px solid red;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* float: left; */
+    margin: 50px;
+    width: 18%;
+    height: auto;
+    margin-left: 200px;
+    padding-top: 40px;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 20px;
+  }
+  
+  .MyAccount_right {
+    border: 1px solid red;
+    
+  }
+  
+.MyAccount_list{
+    color: gray;
+    margin-left: 10px;
+}
+
+.MyAccount_image{
+  border: 1px solid red;
+ 
+}
