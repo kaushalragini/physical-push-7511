@@ -65,8 +65,6 @@ const Navbar = () => {
                   <HomeKitchen />
                 </PopoverContent>
               </Popover>
-           
-           
          <Menu>
          <Input placeholder='Search AJIO' />
          </Menu>

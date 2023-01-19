@@ -10,7 +10,6 @@ const MainRoutes = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/payment' element={""} />
             <Route path='/men/:param' element={<ProductPage />} />
-
         </Routes>
     )
 }

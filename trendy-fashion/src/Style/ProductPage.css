@@ -8,8 +8,14 @@
   border: 1px solid black;
 }
 .DataCardDiv {
-  width: 70%;
+  width: 100%;
   border: 1px solid black;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.ProNav {
+  border: 1px solid;
+  display: flex;
+  justify-content: space-around;
 }

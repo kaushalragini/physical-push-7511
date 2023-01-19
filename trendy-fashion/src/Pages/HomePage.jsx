@@ -4,26 +4,19 @@ import { useState, useEffect } from 'react';
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
-import Footer from '../Components/Footer'
-import Navbar from '../Components/Navbar'
-
 const HomePage = () => {
-
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
-  ////////////////////////////////
   const hour = 13;
   const min = 50;
-
   const [sec, setSec] = useState(60);
-
   useEffect(() => {
     const timer =
       sec > 0 && setInterval(() => setSec(sec - 1), 1000);
     return () => clearInterval(timer);
   }, [sec]);
-  /////////////////////////////////
+
   const [B1, setB1] = useState([]);
   const [B2, setB2] = useState([]);
   const [B3, setB3] = useState([]);
@@ -79,7 +72,7 @@ const HomePage = () => {
 
   return (
     <>
-      <Navbar />
+
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {B1.map(el => (
           <Slide >
@@ -215,19 +208,14 @@ const HomePage = () => {
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-westernwear-header.jpg" alt="" />
       </div>
-
-
       <div style={{ display: 'flex' }}>
         {B9.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
       </div>
-
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-dailymen-header.jpg" alt="" />
       </div>
-
-
       <div style={{ height: '100px' }}>
         <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B10.map(el => (
@@ -252,8 +240,6 @@ const HomePage = () => {
           )}
         </ImageSlider>
       </div>
-
-
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-ethnicwear-header.jpg" alt="" />
       </div>
@@ -382,7 +368,6 @@ const HomePage = () => {
             ))}
           </div></div>
       </Popup>
-      <Footer />
     </>
   )
 }
