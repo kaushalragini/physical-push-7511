@@ -16,13 +16,17 @@ import {
   FormLabel,
 } from '@chakra-ui/react'
 
+import Otp from "./Otp"
+
+//import { Link } from "react-router-dom"
+
 
 const Join = () => {
   return (
     <Popover >
 
       <PopoverTrigger>
-        <Button>Login</Button>
+        <Button color="black" fontSize="10px" >Sign In / Join AJIO</Button>
       </PopoverTrigger>
 
 
@@ -62,9 +66,13 @@ const Join = () => {
             <Input rounded='none' variant='filled' type='email' />
           </FormControl>
 
-          <Button rounded='none' colorScheme='orange' w='full' >CONTINUE</Button>
+          {/* <Link to='/otp' > <Button rounded='none' colorScheme='orange' w='full' >CONTINUE</Button></Link> */}
+         
+          <Otp/>
 
           <Text color="gray.400" >By Signing In, I agree to Terms and Conditions. </Text>
+
+        
         </VStack>
 
       </PopoverContent>
