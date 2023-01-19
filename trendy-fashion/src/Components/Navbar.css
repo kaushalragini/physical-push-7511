@@ -1,8 +1,9 @@
 #Navbar{
     width: 100%;
-    
+    z-index: 999;
     position: sticky;
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: white;
 }
 #NavbarTop{
@@ -13,6 +14,13 @@
     padding: 0px 100px;
     font-size: 13px;
 }
+.project-Logo{
+    width: 60%;
+}
+#bar{
+    font-size: 1.3rem;
+    display: none;
+  }
 #NavbarTop ul{
     display: flex;
     gap: 10px;
@@ -23,7 +31,7 @@
     justify-content: center;
 }
 li{
-    font-size: 10px;
+    font-size: 13px;
 }
 #NavbarTop li:nth-child(3){
     background-color: black;
@@ -35,7 +43,7 @@ li{
     text-decoration: underline;
 }
 #NavbarBottom{
-    border:1px solid black;
+    /* border:1px solid black; */
     display: flex;
     align-items: baseline;
     flex-direction: row;
@@ -46,11 +54,14 @@ li{
     display: flex;
     /* flex-direction: row; */
     gap: 10px;
+    position: relative;
+    left:"50px"
+   
     
 }
 #NavBotLi li{
     list-style: none;
-    font-size: 14px;
+    font-size: 18px;
 }
  label:hover{
     font-weight: bold;
@@ -87,7 +98,7 @@ li{
 @media   (max-width :1026px) and (min-width:760px) {
     #Navbar{
         width: 100%;
-        background-color: red;
+        /* background-color: red; */
         margin: 0px 0px;
     }
     #NavbarTop{
@@ -104,4 +115,24 @@ li{
         width: 100%;
         
     }
+}
+
+@media   (max-width :770px) and (min-width:100px) {
+    #NavbarBottom{
+        padding: 0px 0px;
+    }
+     #bar{
+        display: block;
+        font-size: 2rem;
+        padding: 5px;
+    }
+  .project-Logo{
+    width: 60%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+  #NavbarTop{
+    display: none;
+  }
 }
