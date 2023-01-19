@@ -8,20 +8,19 @@ import {
     Heading,
     Text,
     VStack,
-    FormControl,
-    FormLabel,
     PinInputField,
     PinInput,
     HStack
 } from '@chakra-ui/react'
 
-import { Link } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+
 const Otp = () => {
     return (
         <Popover>
 
             <PopoverTrigger>
-                <Button>Otp</Button>
+            <Button rounded='none' colorScheme='orange' w='full' >CONTINUE</Button>
             </PopoverTrigger>
 
 
@@ -56,7 +55,8 @@ const Otp = () => {
                         </PinInput>
                     </HStack>
 
-                    <Button rounded='none' colorScheme='orange' w='50%' >START SHOPPING</Button>
+                    <Link to="/" ><Button rounded='none' colorScheme='orange' w='100%'  >START SHOPPING</Button></Link>
+
                 </VStack>
 
             </PopoverContent>

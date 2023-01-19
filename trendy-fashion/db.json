@@ -428,24 +428,722 @@
     {
     "id":1,
     "photo": "https://assets.ajio.com/medias/sys_master/images/images/h83/hbd/10412172673054/women-first-pop-up-screen.jpg",
-    "title": "SHOP WOMEN"
+    "title": "SHOP WOMEN",
+    "nav": "/womenpage"
     }, 
     {
     "id":2,
     "photo": "https://assets.ajio.com/medias/sys_master/images/images/h55/h6c/10412175196190/menfirstpopupscreen.jpg",
-    "title": "SHOP MEN"
+    "title": "SHOP MEN",
+    "nav": "/menpage"
     },
     {
     "id":3,
     "photo": "https://assets.ajio.com/medias/sys_master/images/images/h9b/h59/10468934254622/kids-first-pop-up-screen.jpg",
-    "title": "SHOP KIDS"
+    "title": "SHOP KIDS",
+    "nav": "/kidspage"
     },
     {
     "id":4,
     "photo": "https://assets.ajio.com/medias/sys_master/images/images/ha3/hd7/13007045623838/Sale-firstview-Tile-may-06-2019.jpg",
-    "title": "SHOP SALE"
+    "title": "SHOP SALE",
+    "nav": "/salepage"
     } 
+  ],
+  "MenBanner1":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-main-p5-brands-min60.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-main-p2-brands-min40.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-main-p7-brands-starting499.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-main-p4-brands-min50.jpg"
+    } ,
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-main-p6-brands-3060.jpg"
+    } 
+  ],
+  "MenBanner2":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-top-p6-brands-flat50.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-top-p1-brands-flat50.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-top-p3-brands-under699extra35.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-top-p5-brands-min75.jpg"
+    } ,
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-top-p7-brands-upto65.jpg"
+    } 
+  ],
+  "MenBanner3":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-daily-p7-brands-gapdenim20.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-daily-p1-brands-3050.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-daily-p1-brands-3050.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-daily-p5-brands-2050.jpg"
+    } ,
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-mhp-daily-p2-brands-upto80.jpg"
+    } 
+  ],
+  "MenBanner4":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-topbrandstobuy-uspa-upto60.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-topbrandstobuy-tigc-min60.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-topbrandstobuy-adidas-4060.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-topbrandstobuy-superdry-3050.jpg"
+    }
+  ],
+  "MenBanner5":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-ajioexclusives-produktbyj&j-starting399.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-ajioexclusives-arbunore-min60.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-ajioexclusives-walkstyle-min50.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-ajioexclusives-johnplayers-upto70.jpg"
+    }
   ]
+  ,
+  "MenBanner6":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-under399.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-M-MHP-nevermissagooddeal-tshirts-under399.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-flipflopsandslippes-under399.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-boxersbriefsandtrunks-under399.jpg"
+    }
+  ],
+  "MenBanner7":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-under699-under699.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-shirts-under699.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-sneakersandsportsshoes-under699.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nevermissagooddeal-sweatshirtsandhoodies-under699.jpg"
+    }
+  ],
+  "MenBanner8":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-hiddengemstoexplore-trendyol-4070.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-hiddengemstoexplore-wknd-4070.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-hiddengemstoexplore-koton-upto70.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-hiddengemstoexplore-lcwaikiki-upto70.jpg"
+    }
+  ],
+  "MenBanner9":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-MHP-jit-p1-brands-min40.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-D-MHP-jit-p2-brands-upto60.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-MHP-jit-p3-brands-under999.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-d-MHP-jit-p4-brands-upto75.jpg"
+    }
+  ],
+  "MenBanner10":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nomorewinterblues-brands-starting399.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nomorewinterblues-brands-min50.png"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nomorewinterblues-brands-starting699.png"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nomorewinterblues-brands-starting899.png"
+    }
+  ],
+  "MenBanner11":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-elevateyourstyle-brands-upto80.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-elevateyourstyle-brands-upto70.png"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-elevateyourstyle-brands-upto40.png"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-elevateyourstyle-brands-starting299.png"
+    }
+  ],
+  "MenBanner12":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-nomorewinterblues-brands-starting899.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-d-MHP-fitsthatnevergooutofstyle-louisphilippe-starting999.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-d-MHP-fitsthatnevergooutofstyle-arrow-min40.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-d-MHP-fitsthatnevergooutofstyle-leewrangler-min40.jpg"
+    }
+  ],
+  "MenBanner13":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-stampofapprovalfromtheststars-pumaxvirat-4060.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-stampofapprovalfromtheststars-adidasxrohit-4060.png"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-stampofapprovalfromtheststars-filaxdiljit-3060.png"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-stampofapprovalfromtheststars-tigcxsuryakumar-min50.png"
+    }
+  ],
+  "MenBanner14":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-feelstylishinside&out-boxersbrief&trunks-starting149.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-feelstylishinside&out-vests-under999.png"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-feelstylishinside&out-uspa-3050.png"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-feelstylishinside&out-damensch-upto30.png"
+    }
+  ],
+  "MenBanner15":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-trends.png"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-ajiogold.png"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-up&comingbrands.png"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-max.png"
+    }, 
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-sneakerhood.png"
+    },
+    {
+    "id":6,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/35.6_D.png"
+    },
+    {
+    "id":7,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/35.6_D.png"
+    }, 
+    {
+    "id":8,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-wedding.png"
+    },
+    {
+    "id":9,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-home.png"
+    }
+  ],
+  "WomenBanner1":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-mainbanner-p7-truebrowns-upto40.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/15012023-WHP-D-mainbanner-p1-fashionation-50to90.gif"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-mainbanner-p6-stevemadden-pedro-20to50-extra35.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-mainbanner-p3-aurelia-globaldesi-flat65.jpg"
+    }, 
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-mainbanner-p2-divyank-kurtipedia-flat65.jpg"
+    }
+  ],
+  "WomenBanner2":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-topbanner-p7-misschase-veromoda-strting299-extra30.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-topbanner-p6-puma-min40.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-topbanner-p2-levis-pepejeans-upto30to50.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-topbanner-p5-showoff-min60.jpg"
+    }, 
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-topbanner-p3-avaasa-fusion-min50.jpg"
+    }
+  ],
+  "WomenBanner3":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-dailybanner-p7-dolcecrudo-only-under999-extraupto35.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-dailybanner-p5-xint-lyle&scott-min30.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-dailybanner-p2-kazo-upto80.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-dailybanner-p7-dolcecrudo-only-under999-extraupto35.jpg"
+    }, 
+    {
+    "id":5,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-dailybanner-p4-fig-rio-upto70.jpg"
+    }
+  ],
+  "WomenBanner4":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-sponsorbrands-p1-levis-30to60.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-sponsorbrands-p2-puma-40to70.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-sponsorbrands-p3-ritukumar-upto50.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-sponsorbrands-p4-fortcollins-40to70.jpg"
+    }
+  ],
+  "WomenBanner5":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ajioexclusive-p1-avaasa-min30.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ajioexclusive-p2-gas-min30.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ajioexclusive-p3-karigari-min50.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ajioexclusive-p4-dnmx-starting249.jpg"
+    }
+  ],
+  "WomenBanner6":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwear-p1-sweaters&sweatshirts-starting299.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwear-p2-jackets&shrugs-upto60.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwear-p3-stoles&scarves-starting99.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwear-p4-glovesscarves&bandanas-upto50.jpg"
+    }
+  ],
+  "WomenBanner7":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p1-under399.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p2-tshirts.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p3-necklaces&pendants.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p4-flipflops&slippers.jpg"
+    }
+  ],
+  "WomenBanner8":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p7-under699.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p8-kurtas&kurtis.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p9-sarees.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p10-shirts-tops-tunics.jpg"
+    }
+  ],
+  "WomenBanner9":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p13-under999.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p14dresses.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p15-jeans&jeggings.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-bestdeals-p16-pyjamas&loungeshorts.jpg"
+    }
+  ],
+  "WomenBanner10":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-JIT-p1-cottinfab-zinklondon-min60.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-JIT-p3-bitterlime-mish-min40.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-JIT-p4-truebrowns-upto40.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/19012023-WHP-D-JIT-p5-sareemall-saadhvi-min50.jpg"
+    }
+  ],
+  "WomenBanner11":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p1-levis-ck-30to50v.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p2-rio-fig-min50.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p3-allensolly-bellefille-min40.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwardrobe-p4-superdry-m&s-30to50.jpg"
+    }
+  ],
+  "WomenBanner12":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p1-tommy-veromoda-starting240.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p2-trendyol-rio-starting449.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p3-levis-pepejeans-starting699.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p4-edmama-mothercare-starting149.jpg"
+    }
+  ],
+  "WomenBanner13":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p1-levis-ck-30to50v.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p2-rio-fig-min50.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-D-AJIOMANIA-winterwardrobe-p3-allensolly-bellefille-min40.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-winterwardrobe-p4-superdry-m&s-30to50.jpg"
+    }
+  ],
+  "WomenBanner14":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p1-tommy-veromoda-starting240.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p2-trendyol-rio-starting449.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p3-levis-pepejeans-starting699.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-westernwear-p4-edmama-mothercare-starting149.jpg"
+    }
+  ] ,
+  "WomenBanner15":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ethnicwear-p1-avaasa-ishin-starting449.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ethnicwear-p2-satrani-soch-min50.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ethnicwear-p3-aurelia-gulmoharjaipur-starting599.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-ethnicwear-p4-anekaant-chumbak-starting599.jpg"
+    }
+  ],
+  "WomenBanner16":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-classicbrands-p1-ishin-anubhutee-min50.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-classicbrands-p2-gulmoharjaipur-upto70.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-classicbrands-p3-lifestyle-upto60.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-classicbrands-p4-gosriki-min50.jpg"
+    }
+  ],
+  "WomenBanner17":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p1-veromoda-40to60.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p2-fila-30to60.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p3-everqupid-40to60.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p10-steppings-min40.jpg"
+    },
+     {
+      "id":5,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p4-tommy-30to50.jpg"
+      }, 
+      {
+      "id":6,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p5-kushal-min60.jpg"
+      },
+      {
+      "id":7,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p6-stevemadden-30to50.jpg"
+      },
+      {
+      "id":8,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p11-hunnel-upto80.jpg"
+      },
+      {
+      "id":9,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p7-aurelia-30to60.jpg"
+      },
+      {
+      "id":10,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p8-itse-upto30.jpg"
+      },
+      {
+      "id":11,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p9-grimelange-upto40.jpg"
+      },
+      {
+      "id":12,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-topbands-p12-sneakapeek-upto60.jpg"
+      }
+  ],
+  "WomenBanner18":[
+    {
+    "id":1,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p1-trends.jpg"
+    }, 
+    {
+    "id":2,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p2-max.jpg"
+    },
+    {
+    "id":3,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p3-indiepicks.jpg"
+    },
+    {
+    "id":4,
+    "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p4-ajiogold.jpg"
+    },
+     {
+      "id":5,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p5-jewellery.jpg"
+      }, 
+      {
+      "id":6,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/06012023-WHP-DD-AJIOMANIA-discoveronline-p6-saree.jpg"
+      },
+      {
+      "id":7,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/11012023-WHP-D-AJIOMANIA-discoveronline-p9-home.jpg"
+      },
+      {
+      "id":8,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/11012023-WHP-D-AJIOMANIA-discoveronline-p8-wedding.jpg"
+      },
+      {
+      "id":9,
+      "photo": "https://assets.ajio.com/cms/AJIO/WEB/13012023-WHP-D-AJIOMANIA-discoveronline-p7-azorte.jpg"
+      }
+  ]
+
+
+
   },
   "menFootwear": [
     {
