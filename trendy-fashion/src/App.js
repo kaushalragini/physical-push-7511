@@ -1,12 +1,15 @@
 import "./App.css";
-// import Navbar from "./Components/Navbar";
+ import Navbar from "./Components/Navbar";
 import MainRoutes from "./Pages/MainRoutes";
+import Footer from "./Components/Footer"
+import WomenHomePage from "./Pages/WomenHomePage"
 
 function App() {
   return (
     <div className="App">
-    {/* <Navbar/> */}
+    <Navbar/>
       <MainRoutes />
+      <Footer/>
     </div>
   );
 }
