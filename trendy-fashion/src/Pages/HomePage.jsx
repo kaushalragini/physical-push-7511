@@ -5,13 +5,12 @@ import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
 import { NavLink } from 'react-router-dom';
-
 const HomePage = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
-  ////////////////////////////////
+  
   const hour = 13;
   const min = 50;
 
@@ -22,7 +21,7 @@ const HomePage = () => {
       sec > 0 && setInterval(() => setSec(sec - 1), 1000);
     return () => clearInterval(timer);
   }, [sec]);
-  /////////////////////////////////
+  
   const [B1, setB1] = useState([]);
   const [B2, setB2] = useState([]);
   const [B3, setB3] = useState([]);
@@ -74,7 +73,7 @@ const HomePage = () => {
         setB21(response.data.Banner21)
       })
   }, [])
-  ///////////////////////////////////////////////////////////////////////////////////////////
+  
 
   return (
     <>
