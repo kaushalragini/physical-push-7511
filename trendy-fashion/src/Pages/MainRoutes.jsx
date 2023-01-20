@@ -7,7 +7,7 @@ import MyAccount from './MyAccount/MyAccount'
 import MenHomePage from './MenHomePage'
 import WomenHomePage from './WomenHomePage'
 import Dashboard from '../Components/Dashboard'
-import Login from './Login'
+// import Login from './Login'
 import WomenProductPage from './WomenProductPage'
 import SingleProductPage from './SingleProductPage'
 import SingleWomenProductPage from './SingleWomenProductPage'
@@ -20,7 +20,7 @@ const MainRoutes = () => {
             <Route path='/payment' element={""} />
             <Route path='/men/:param' element={<ProductPage />} />
             <Route path='/myAccount' element={<MyAccount />} />
-            <Route path='/login' element={<Login />} />
+            {/* <Route path='/login' element={<Login />} /> */}
             <Route path='/dashboard' element={<Dashboard />} />
             <Route path='/women/:param' element={<WomenProductPage />} />
             <Route path="/men/:param/:param1/:param2/:param3/:param4" element={<SingleProductPage />} />
