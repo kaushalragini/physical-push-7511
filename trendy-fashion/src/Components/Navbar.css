@@ -12,13 +12,13 @@
     justify-content: flex-end;
     align-items: center;
     padding: 0px 100px;
+    font-size: 1.3rem;
     font-size: 13px;
 }
 .project-Logo{
     width: 60%;
 }
 #bar{
-    font-size: 1.3rem;
     display: none;
   }
 #NavbarTop ul{
