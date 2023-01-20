@@ -18,7 +18,7 @@ import {
 
 import Otp from "./Otp"
 
-//import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const Join = () => {
@@ -26,7 +26,7 @@ const Join = () => {
     <Popover >
 
       <PopoverTrigger>
-        <Button color="black" fontSize="10px" >Sign In / Join AJIO</Button>
+        <Button  colorScheme='black' variant='link' fontSize="10px" >Sign In / Join AJIO</Button>
       </PopoverTrigger>
 
 
