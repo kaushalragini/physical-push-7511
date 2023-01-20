@@ -15,7 +15,8 @@ const MainRoutes = () => {
             <Route path='/womenpage' element={<WomenHomePage />} />
             <Route path='/payment' element={""} />
             <Route path='/men/:param' element={<ProductPage />} />
-            <Route path='/myAccount' element={<MyAccount/>} />
+            <Route path='/myAccount' element={<MyAccount />} />
+            <Route path='*' element={<h2>Page Not Found</h2>} />
         </Routes>
     )
 }
