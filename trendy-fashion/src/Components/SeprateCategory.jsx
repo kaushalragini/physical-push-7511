@@ -28,7 +28,7 @@ function SeprateCategory() {
                         <ModalBody border="1px solid">
                             <div>
                                 <input type="Checkbox" />
-                                <label>clothing</label>
+                                <label>Footwear</label>
                             </div>
                             <div>
                                 <input type="Checkbox" />
@@ -36,12 +36,9 @@ function SeprateCategory() {
                             </div>
                             <div>
                                 <input type="Checkbox" />
-                                <label>clothing</label>
+                                <label>Accessorise</label>
                             </div>
-                            <div>
-                                <input type="Checkbox" />
-                                <label>clothing</label>
-                            </div>
+
 
                         </ModalBody>
                     </div>

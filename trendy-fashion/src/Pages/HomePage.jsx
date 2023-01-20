@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 const HomePage = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -68,7 +68,7 @@ const HomePage = () => {
         setB21(response.data.Banner21)
       })
   }, [])
-  
+
 
   return (
     <>
@@ -81,7 +81,7 @@ const HomePage = () => {
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {B1.map(el => (
           <Slide >
-            <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
+            <Link to="/men/clothing"><img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} /></Link>
           </Slide>)
         )}
       </ImageSlider>
@@ -110,7 +110,7 @@ const HomePage = () => {
         <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B3.map(el => (
             <Slide >
-              <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
+              <Link to="/women/clothing"><img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} /></Link>
             </Slide>)
           )}
         </ImageSlider>
@@ -323,7 +323,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-home-header.jpg" alt="" />
       </div>
 
-      <div className='imgdiv4'  style={{ display: 'flex' }}>
+      <div className='imgdiv4' style={{ display: 'flex' }}>
         {B19.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -365,8 +365,8 @@ const HomePage = () => {
             {B21.map(el => (<>
               <div style={{ textAlign: 'center' }}>
 
-              <NavLink to={el.nav}>
-                <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
+                <NavLink to={el.nav}>
+                  <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
                 </NavLink>
                 <div style={{ padding: '5px' }}>
                   <img style={{ height: '250px', width: '220px' }} key={el.id} alt="" src={el.photo} />
