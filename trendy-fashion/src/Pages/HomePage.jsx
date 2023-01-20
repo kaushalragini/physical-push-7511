@@ -73,6 +73,11 @@ const HomePage = () => {
   return (
     <>
 
+
+<div>
+  <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Urgency74Hrs-LiveNow-1440x128.jpg" alt="" />
+</div>
+
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {B1.map(el => (
           <Slide >
