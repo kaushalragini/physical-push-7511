@@ -1,4 +1,4 @@
-import { Box, Button, Heading, Text, Image } from "@chakra-ui/react";
+import { Box,  Heading, Text } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 import "./MyAccount.css"
 
@@ -19,7 +19,7 @@ const MyAccount = () => {
                         <Box className="MyAccount_list" ><Link>My Rewards</Link></Box>
                         <Box className="MyAccount_list" ><Link>Customer Care</Link></Box>
                     </Box>
-                    <Text color='blue'>Proile</Text>
+                    <Text color='blue'>Profile</Text>
                     <Box className="MyAccount_list" ><Link href="#" >Personal Information</Link></Box>
                     <Box className="MyAccount_list" ><Link href="#" >Address Book</Link></Box>
                     <Box className="MyAccount_list" ><Link href="#" >Payments</Link></Box>

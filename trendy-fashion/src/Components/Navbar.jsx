@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom';
 // import BasicUsage from './SignUp';
 import DrawerExample from './Drawer';
 import SearchInput from './SearchInput';
+import WishList from './WishList';
 // import {HamburgerIcon} from "@chakra-ui/icons";s
 
 const Navbar = () => {
@@ -22,7 +23,7 @@ const Navbar = () => {
           <ul>
             <Link to='/myAccount' ><li>MyAccount</li></Link>
             <li><Sigin /></li>
-            <li>SignUp/Login</li>
+            {/* <li>SignUp/Login</li> */}
             <li>Customer Care</li>
             <li>Visit AJIOLUXE</li>
           </ul>
@@ -37,7 +38,7 @@ const Navbar = () => {
             <Hide below="md">
               <Popover matchWidth={false} trigger="hover">
                 <PopoverTrigger>
-                  <Link to='/men/:param' > <span>MEN</span></Link>
+                  <Link to='/menpage' > <span>MEN</span></Link>
                 </PopoverTrigger>
                 <PopoverContent w="100%" mt="10px">
                   <Men />
@@ -46,7 +47,7 @@ const Navbar = () => {
 
               <Popover matchWidth={false} trigger="hover">
                 <PopoverTrigger>
-                  <span>WOMEN</span>
+             <Link to="/womenpage" >    <span>WOMEN</span></Link> 
                 </PopoverTrigger>
                 <PopoverContent w="100%" mt="10px">
                   <Women />
@@ -91,17 +92,18 @@ const Navbar = () => {
 
 
 
-              <Image paddingBottom="10px" src="https://assets.ajio.com/static/img/wishlistIcon.svg" />
+              {/* <Image paddingBottom="10px" src="https://assets.ajio.com/static/img/wishlistIcon.svg" /> */}
+              <WishList/>
 
 
               <Image src="https://cdn-icons-png.flaticon.com/512/71/71200.png" style={{ width: "3%", height: "4%" }} />
 
             </Hide>
-            <div  >
+            {/* <div  > */}
               {/* <i id="bar" className={clicked?'fas fa-bars':'fas fa-times'} onClick={()=>{setClicked(!clicked)}} ></i>  */}
               <DrawerExample />
 
-            </div>
+            {/* </div> */}
             {/* {<HamburgerIcon boxSize="1.5em" />} */}
 
           </Box>
