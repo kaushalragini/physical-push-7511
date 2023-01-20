@@ -63,7 +63,7 @@ export const getmenClothingFailure = () => {
 export const getmenFootwear = (params) => (dispatch) => {
   dispatch(getmenFootwearRequest());
   return axios
-    .get(`http://localhost:8080/menFootwear`)
+    .get(`http://localhost:8080/menFootwear`, params)
     .then((res) => {
       dispatch(getmenFootwearSuccess(res.data));
     })
@@ -75,7 +75,7 @@ export const getmenFootwear = (params) => (dispatch) => {
 export const getmenClothing = (params) => (dispatch) => {
   dispatch(getmenClothingRequest());
   return axios
-    .get(`http://localhost:8080/menClothing`)
+    .get(`http://localhost:8080/menClothing`, params)
     .then((res) => {
       dispatch(getmenClothingSuccess(res.data));
     })
@@ -87,7 +87,7 @@ export const getmenClothing = (params) => (dispatch) => {
 export const getmenAccessories = (params) => (dispatch) => {
   dispatch(getmenAccessoriesRequest());
   return axios
-    .get(`http://localhost:8080/menAccessories`)
+    .get(`http://localhost:8080/menAccessories`, params)
     .then((res) => {
       dispatch(getmenAccessoriesSuccess(res.data));
     })
