@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   Accordion,
   AccordionItem,
@@ -8,7 +8,51 @@ import {
   Box
 } from '@chakra-ui/react'
 import SeprateCategory from './SeprateCategory'
+import { useSearchParams, useParams, ScrollRestoration, useLocation } from 'react-router-dom';
+import { getBrandData } from "../utils";
 const Filter = () => {
+  const { param } = useParams();
+  const location = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialCategory = searchParams.getAll('brandName');
+  const initSort = searchParams.getAll('sort');
+  const [sortBy, setSortBy] = useState(initSort || "")
+  const [category, setCategory] = useState(initialCategory || []);
+  const [] = useState()
+  const [lowDiscount, setLowDiscount] = useState(0);
+  const [highDiscount, setHighDiscount] = useState(0);
+
+  const handleFilterCheckbox = (e) => {
+    e.preventDefault();
+    const newCategories = [...category];
+    if (newCategories.includes(e.target.value)) {
+      newCategories.splice(newCategories.indexOf(e.target.value), 1)
+    }
+    else {
+      newCategories.push(e.target.value);
+    }
+    setCategory(newCategories);
+  }
+
+  const discountChangeHandler = (e) => {
+    const limits = e.target.value.split("-");
+    const lower = limits[0];
+    const higher = limits[1];
+    setLowDiscount(lower);
+    setHighDiscount(higher);
+  }
+
+  const menData = getBrandData(param);
+
+
+  useEffect(() => {
+    let params = {};
+    params.brandName = category;
+    sortBy && (params.sort = sortBy);
+    lowDiscount && (params.discount_gte = lowDiscount);
+    highDiscount && (params.discount_lte = highDiscount);
+    setSearchParams(params);
+  }, [category, lowDiscount]);
   return (
     <div className='fliterDiv'>
       Filter
@@ -60,27 +104,41 @@ const Filter = () => {
                 <AccordionPanel pb={4}>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >
+                      🟢 green
+                    </label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >
+                      🔴 red
+                    </label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >b</label>
+                    <label >
+                      🟡 yellow
+                    </label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >c</label>
+                    <label >🟣 purple</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >d</label>
+                    <label >⚫️ black</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >e</label>
+                    <label >⚪️ white</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >🟤 brown</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" />
+                    <label >🔵 blue</label>
                   </div>
                 </AccordionPanel>
               </AccordionItem>
@@ -98,31 +156,27 @@ const Filter = () => {
                 <AccordionPanel pb={4}>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >menFootwear</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >menClothing</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >menAccessories</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >womenAccessories</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >womenClothing</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <label >womenFootwear</label>
                   </div>
                 </AccordionPanel>
               </AccordionItem>
@@ -139,28 +193,25 @@ const Filter = () => {
                 <AccordionPanel pb={4}>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >Below Rs.500</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >Rs.500-1000</label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >Rs.1001-1500 </label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >Rs.1501-2000 </label>
                   </div>
                   <div>
                     <input type="checkbox" />
-                    <label >a</label>
+                    <label >Rs.2001-2500</label>
                   </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
+
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -176,28 +227,28 @@ const Filter = () => {
                 </h2>
                 <AccordionPanel pb={4}>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="0-20" />
+                    <label>0-20%</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="21-30" />
+                    <label >21-30%</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="31-40" />
+                    <label >31-40%</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="41-50" />
+                    <label>41-50%</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="51-60" />
+                    <label>51-60%</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
-                    <label >a</label>
+                    <input type="checkbox" onChange={discountChangeHandler} value="60-100" />
+                    <label > more than 60%</label>
                   </div>
                 </AccordionPanel>
               </AccordionItem>
@@ -211,40 +262,25 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
-                  <div>
-                    <input type="checkbox" />
-                    <label >a</label>
-                  </div>
+                  {
+                    menData.map((item, i) => {
+                      return (
+                        <div key={i}>
+                          <input type="checkbox"
+                            value={item}
+                            onChange={handleFilterCheckbox}
+                            checked={category.includes(item)}
+                          />
+                          <label>{item}</label>
+                        </div>
+                      )
+                    })
+                  }
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
           </AccordionPanel>
         </AccordionItem>
-
         <AccordionItem>
           <h2>
             <AccordionButton>
@@ -257,7 +293,6 @@ const Filter = () => {
           <AccordionPanel pb={4}>
             Please select upto 3 categories to view more filters
             <SeprateCategory />
-
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
