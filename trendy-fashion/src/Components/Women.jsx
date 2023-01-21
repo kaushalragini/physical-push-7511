@@ -10,50 +10,47 @@ const Women = () => {
           <ul>
             <Link to="/women/clothing"><li className='firstElement' >CLOTHING</li></Link>
             <Link to="/women/footwear"><li className='firstElement'>FOOT WEAR</li></Link>
-            <Link to=""><li className='firstElement'>ACCESSORIES</li></Link>
-            <Link to=""><li className='firstElement'>ALL THATS NEW</li></Link>
-            <Link to=""><li className='firstElement'>WINTER WEAR</li></Link>
+            <Link to="/women/accessories"><li className='firstElement'>ACCESSORIES</li></Link>
+            <Link to="/women/clothing"><li className='firstElement'>ALL THATS NEW</li></Link>
+            <Link to="/women/footwear"><li className='firstElement'>WINTER WEAR</li></Link>
             <Link to=""><li className='firstElement'>AJIO GLOBAL</li></Link>
             <Link to=""><li className='firstElement'>NIGHT & LOUNGEWEAR</li></Link>
             <Link to=""><li className='firstElement'>BEAUTY</li></Link>
             <Link to=""><li className='firstElement'>ATHLEISURE</li></Link>
             <Link to=""><li className='firstElement'>FUSIONWEAR</li></Link>
-
-            <li>dresses & Gowns</li>
-            <li>kurtas</li>
-            <li>Kurtis & Tunics</li>
-            <li>Pants & Shorts</li>
-            <li>Jackets & Shrugs</li>
-            <li>Shirts,Tops & Tunics</li>
-          </ul>
-
-        </VStack>
-        <VStack alignItems="start" className="dropdown" >
-          <ul>
-            <li className='firstElement' >ETHNIC WEAR</li>
-            <li>Kurtas</li>
-            <li>Dress Material</li>
-            <li>Salwars & Chudidars</li>
-            <li>Kurtis & Tunics</li>
-            <li>Sarees</li>
-            <li>Dupattas</li>
-            <li>Kurtas Suit Sets</li>
-            <li>Blouses</li>
-            <li>Leggings</li>
-            <li>Skirts & Ghagras</li>
-            <li>Shawls & Wraps</li>
-            <li>Palazzos & Culottes</li>
-            <li className='firstElement'>JEWELLERY</li>
-            <li>Gold And Silver Coins</li>
-            <li>Gold And Diamond Jewellery</li>
-            <li>Silver Jewellery</li>
-            <li>Fashion Jewellery</li>
-
-
+            <Link to=""> <li >dresses & Gowns</li></Link>
+            <Link to=""> <li>kurtas</li></Link>
+            <Link to=""><li>Kurtis & Tunics</li></Link>
+            <Link to=""><li>Pants & Shorts</li></Link>
+            <Link to=""><li>Jackets & Shrugs</li></Link>
+            <Link to=""><li>Shirts,Tops & Tunics</li></Link>
           </ul>
         </VStack>
+        <Link to="/women/clothing">
+          <VStack alignItems="start" className="dropdown" >
+            <ul>
+              <li className='firstElement'>ETHNIC WEAR</li>
+              <li>Kurtas</li>
+              <li>Dress Material</li>
+              <li>Salwars & Chudidars</li>
+              <li>Kurtis & Tunics</li>
+              <li>Sarees</li>
+              <li>Dupattas</li>
+              <li>Kurtas Suit Sets</li>
+              <li>Blouses</li>
+              <li>Leggings</li>
+              <li>Skirts & Ghagras</li>
+              <li>Shawls & Wraps</li>
+              <li>Palazzos & Culottes</li>
+              <li className='firstElement'>JEWELLERY</li>
+              <li>Gold And Silver Coins</li>
+              <li>Gold And Diamond Jewellery</li>
+              <li>Silver Jewellery</li>
+              <li>Fashion Jewellery</li>
+            </ul>
+          </VStack>
+        </Link>
         <VStack alignItems="start" className="dropdown" >
-
           <li className='firstElement'>LINGERIE & INNERWEAR</li>
           <li>Bras</li>
           <li>Panties</li>
@@ -72,11 +69,9 @@ const Women = () => {
             <li className='firstElement'>FEATURED</li>
             <li>Dresses Under 999</li>
             <li>Footwear Under 799</li>
-
-
           </ul>
         </VStack>
-        <VStack alignItems="start" className="dropdown" >
+        <Link to='/women/footwear'> <VStack alignItems="start" className="dropdown" >
           <ul>
             <li className='firstElement'>FOOTWEAR</li>
             <li>Casual Shoes</li>
@@ -86,7 +81,6 @@ const Women = () => {
             <li>Heeled Sandals</li>
             <li>Heeled Shoes</li>
             <li>Boots</li>
-
             <li className='firstElement'>WESTERN WEAR</li>
             <li>Tops</li>
             <li>T-Shirts</li>
@@ -103,9 +97,8 @@ const Women = () => {
             <li>Sweaters & Cardigans</li>
           </ul>
         </VStack>
-
+        </Link>
       </Grid>
-
     </Box>
   );
 };
