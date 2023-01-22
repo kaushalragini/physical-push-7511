@@ -1,7 +1,7 @@
 # Trendy-Fashion
 With the trendiest, freshest, and most unique styles from across India and the world, Trendy-Fashion invites you to express your personal style fearlessly, and with a confidence and optimism that cannot be easily shaken.
 <hr/>
-# Trendy-Fashio
+# Trendy-Fashion
   # Ragini Kaushal
   # Ujjawal
   # Swapnil
@@ -19,6 +19,7 @@ With the trendiest, freshest, and most unique styles from across India and the w
 <li>Dynamic Cart Page.
 </li>
 <li>Payment Page.</li>
+  <li>Admin Page </li>
 </ul>
 
 <h1>Landing Page</h1>
