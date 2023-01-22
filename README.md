@@ -35,6 +35,4 @@ alt="xx" width=1000px height=400px/>
 
 <h1>Login Page</h1>
 <img width="1417" alt="Screenshot 2023-01-23 at 12 02 01 AM" src="https://user-images.githubusercontent.com/110046267/213933452-008a0c8b-3deb-4f79-aa91-14c7eaf0bbdd.png">
-
-<img src="" alt="" width=1000px height=400px/>
 <p> Whenver customer has to buy something they can buy the product according to their choices by visiting the Product Page</p>
