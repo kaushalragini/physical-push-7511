@@ -133,7 +133,7 @@ const HomePage = () => {
           <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
             {B4.map(el => (
               <Slide >
-                <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
+                <Link to="/men/clothing"><img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} /></Link>
               </Slide>)
             )}
           </ImageSlider>
@@ -145,13 +145,14 @@ const HomePage = () => {
         </div>
       </Link>
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
+        <Link to="/women/footwear"><ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B5.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
             </Slide>)
           )}
         </ImageSlider>
+        </Link>
       </div>
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-gamesonze-header.jpg" alt="" />

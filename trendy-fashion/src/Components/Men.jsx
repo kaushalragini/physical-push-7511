@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "./Men.css"
 const Men = () => {
   return (
-    <Box w="100%" px={10} py={0}>
-      <Grid templateColumns="repeat(4,1fr)" gap={3} alignItems="start">
-        <VStack alignItems="flex-start" className="dropdown" >
-          <ul>
+    <Box w="100%" px={10} py={0} >
+      <Grid templateColumns="repeat(4,1fr)" gap={3} alignItems="start" >
+        <VStack alignItems="flex-start" className="dropdown"  >
+          <ul >
             <Link to="/men/clothing"><li className='firstElement' >CLOTHING</li></Link>
             <Link to="/men/footwear"><li className='firstElement'>FOOT WEAR</li></Link>
             <Link to="/men/accessories"><li className='firstElement'>ACCESSORIES</li></Link>

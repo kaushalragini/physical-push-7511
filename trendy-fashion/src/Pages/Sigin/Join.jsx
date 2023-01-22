@@ -1,61 +1,168 @@
-
-import React from 'react';
 import {
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverCloseButton,
+  PinInputField,
+  PinInput,
+  HStack,
   Button,
-  Heading,
+  ModalFooter,
   Input,
+  FormLabel,
+  FormControl,
+  ModalBody,
+  ModalCloseButton,
+  ModalHeader,
+  ModalContent,
+  ModalOverlay,
+  Modal,
+  useDisclosure,
+  Text,
   Image,
   Box,
-  Text,
-  VStack,
-  FormControl,
-  FormLabel,
-} from '@chakra-ui/react'
-import Otp from "./Otp"
-const Join = () => {
-  return (
-    <Popover >
-      <PopoverTrigger>
-        <Button  colorScheme='black' variant='link' fontSize="10px" >Sign In / Join AJIO</Button>
-      </PopoverTrigger>
-      <PopoverContent
-        w={['full', 'md']}
-        p={[8, 10]}
-        mt={[20, '10vh']}
-        mx='auto'
-        border={['none', '1px']}
-        borderColor={['', 'gray.300']}
-        borderRadius={10}
-      >
-        <VStack spacing={4} align='flex-start' w='full' >
-          <VStack spacing={4} align='flex-start' w='full' >
-            <PopoverCloseButton />
-            <Heading>Welcome to AJIO</Heading>
-            <Text>Join/Sign In using</Text>
-            <Box display={['flex']} justifyContent="space-between" >
-                        <Image width="40%" height="60%" src="https://user-images.githubusercontent.com/104529601/213227020-a0068aeb-d98e-4d39-aade-b429df45cce5.png" />
-                        <Image width="40%" height="60%" src="https://user-images.githubusercontent.com/104529601/213227043-7971fb62-aff6-428a-ad27-c75e0dc748b5.png" />
-                    </Box>
-            <Box display="flex" justifyContent="space-between" color="gray.400" >
-              <Box marginLeft="175px" ></Box>
-              <Box>Or</Box>
-              <Box></Box>
-            </Box>
-          </VStack>
-          <FormControl isRequired>
-            <FormLabel>Enter Mobile Number/Email</FormLabel>
-            <Input rounded='none' variant='filled' type='email' />
-          </FormControl>
-          {/* <Link to='/otp' > <Button rounded='none' colorScheme='orange' w='full' >CONTINUE</Button></Link> */}
-          <Otp/>
-          <Text color="gray.400" >By Signing In, I agree to Terms and Conditions. </Text>
-        </VStack>
-      </PopoverContent>
-    </Popover>
-  )
+  color,
+} from "@chakra-ui/react";
+import React, { useState, useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/AuthContext";
+import style from "../../Style/Join.module.css"
+import HoverProfile from "./Hover";
+function Join() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const initialRef = React.useRef(null);
+  const finalRef = React.useRef(null);
+  const [phone, setPhone] = useState("");
+  const [otp, setOtp] = useState("");
+  const [sendOtp, setSendOtp] = useState(false);
+  const { isAuth, toggleAuth } = useContext(AuthContext);
+  const phoneNumberHandler = (e) => {
+    if (phone.length === 10) {
+      return;
+    }
+    setPhone(e.target.value);
+  };
+  const otpHandler = (e) => {
+    setOtp(e.target.value);
+  };
+  const clickHandler = () => {
+    setSendOtp(true);
+    setPhone("");
+  };
+  const otpSubmitHandler = () => {
+    setSendOtp(false);
+    toggleAuth(!isAuth);
+    onClose();
+  };
+  if (sendOtp === true) {
+    return (
+      <>
+        {isAuth === false ? (
+          <Button onClick={onOpen} className="loginBtn">
+            LOGIN/SIGNUP
+          </Button>
+        ) : (
+          <Button style={{ backgroundColor: "red", color: "black" }}>MD Kamran Khan</Button>
+        )}
+        <Modal
+          className="loginModal"
+          // initialFocusRef={initialRef}
+          // finalFocusRef={finalRef}
+          isOpen={isOpen}
+          onClose={onClose}
+        >
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>
+            </ModalHeader>
+            <ModalCloseButton />
+            <ModalBody pb={6}>
+              <FormControl>
+                {/* <FormLabel>Enter OTP</FormLabel> */}
+                <FormLabel
+                  style={{ color: "black" }}>Please enter the OTP</FormLabel>
+                <HStack>
+                  <PinInput>
+                    <PinInputField />
+                    <PinInputField />
+                    <PinInputField />
+                    <PinInputField />
+                  </PinInput>
+                </HStack>
+              </FormControl>
+            </ModalBody>
+            <ModalFooter>
+              <Button style={{ backgroundColor: "#D5A249", color: "white", width: "100px" }} onClick={otpSubmitHandler}>Submit </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
+    );
+  } else {
+    return (
+      <>
+        {isAuth === false ? (
+          <p className="loginBtn" style={{
+
+
+          }} onClick={onOpen} >
+            Sign In/Join Ajio
+          </p>
+        ) : (
+          <Button>
+            {/* add popup here */}
+            <HoverProfile />
+          </Button>
+        )}
+        <Modal
+          initialFocusRef={initialRef}
+          finalFocusRef={finalRef}
+          isOpen={isOpen}
+          onClose={onClose}
+        >
+          <ModalOverlay />
+          <ModalContent>
+            <ModalHeader>
+            </ModalHeader>
+            <ModalCloseButton />
+            <ModalBody pb={6}>
+              <div className={style.head} >
+                <h1>Welcome to AJIO</h1>
+                <div >
+                  <p>Join/Sign In using</p>
+                </div>
+              </div>
+              <div style={
+                {
+                  marginTop: "50px"
+                }
+              }>
+                <img src="https://i.imgur.com/sBcekXE.png" alt="" />
+              </div>
+              <div>
+              </div>
+              <FormControl>
+                <FormLabel style={{ marginTop: "50px" }}>Enter your number to Signup or Login</FormLabel>
+                <Input
+                  ref={initialRef}
+                  placeholder="Enter Your Phone Number*"
+                  onChange={(e) => phoneNumberHandler(e)}
+                  type="text"
+                  maxlength="10"
+                  value={phone}
+                />
+                <Box fontSize="sm">{phone.length}/10</Box>
+              </FormControl>
+            </ModalBody>
+            <ModalFooter>
+              <Button
+                style={{ backgroundColor: "#D5A249", color: "white", width: "100px" }}
+                disabled={phone === "" ? "disabled" : ""}
+                onClick={clickHandler}
+              >
+                Continue
+              </Button>
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
+    );
+  }
 }
 export default Join;

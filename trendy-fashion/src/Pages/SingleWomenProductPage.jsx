@@ -1,11 +1,3 @@
-// import React from 'react'
-// const SingleWomenProductPage = () => {
-//     return (
-//         <div>
-//         </div>
-//     )
-// }
-// export default SingleWomenProductPage
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -14,6 +6,7 @@ import Slider from "react-slick";
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { callWomenData } from '../utils';
+import axios from 'axios';
 const SingleWomenProductPage = (id) => {
     const paramData = useParams();
     const param = paramData.param;
@@ -36,8 +29,6 @@ const SingleWomenProductPage = (id) => {
             displayData = productData.womenClothing;
             break;
     }
-    console.log(displayData);
-    // let [data, setData] = useState([])
     let navigate = useNavigate()
     const settings = {
         dots: false,
@@ -58,10 +49,17 @@ const SingleWomenProductPage = (id) => {
             const aa = displayData.find((item) => {
                 return +item.id === +product_id;
             })
-            console.log(aa);
             singleData && setSingleData(aa);
         }
     }, [id]);
+    const addToCartHandler = () => {
+        const payload = singleData;
+        axios.post(`http://localhost:8080/shoppingCart`, payload)
+            .then((res) => {
+                console.log(res.data);
+            })
+        navigate(`/product/${product_id}`);
+    }
     return (
         <div>
             <div>
@@ -92,7 +90,7 @@ const SingleWomenProductPage = (id) => {
                                 <p>9</p>
                             </div>
                             <div className={Style.button1}>
-                                <button onClick={() => navigate(`/product/${id}`)} >
+                                <button onClick={() => addToCartHandler()}>
                                     ADD TO BAG</button>
                                 <button >
                                     SAVE TO WHISLIST</button>
