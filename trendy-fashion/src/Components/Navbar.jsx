@@ -20,7 +20,7 @@ const Navbar = () => {
             <Link to='/myAccount' ><li>MyAccount</li></Link>
             <li><Sigin /></li>
             <li>Customer Care</li>
-            <li>Visit AJIOLUXE</li>
+         <a href='https://luxe.ajio.com/' ><li style={{backgroundColor:"black",color:"white"}} >Visit AJIOLUXE</li></a>   
           </ul>
         </Box>
         <Box id='NavbarBottom'  >
