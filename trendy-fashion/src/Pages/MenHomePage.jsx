@@ -5,6 +5,7 @@ import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const MenHomePage = () => {
@@ -55,21 +56,16 @@ const MenHomePage = () => {
         setMb13(response.data.MenBanner13)
         setMb14(response.data.MenBanner14)
         setMb15(response.data.MenBanner15)
-
-
-
-
-
         setB21(response.data.Banner21)
 
       })
   }, [])
-  ///////////////////////////////////////////////////////////////////////////////////////////
+
 
   return (
     <>
 
-      
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/D-MainBanner-SectionHeaderStrip.gif" alt="" />
       </div>
@@ -78,8 +74,10 @@ const MenHomePage = () => {
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {Mb1.map(el => (
           <Slide >
-            <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
-          </Slide>)
+            <Link to="/men/clothing"><img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />     </Link>
+          </Slide>
+
+        )
         )}
       </ImageSlider>
 
@@ -196,7 +194,7 @@ const MenHomePage = () => {
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
       </div>
-      
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-elevateyourstyle-header.jpg" alt="" />
       </div>
@@ -236,7 +234,7 @@ const MenHomePage = () => {
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
       </div>
-     
+
 
       <div>
         <img src=" https://assets.ajio.com/cms/AJIO/WEB/06012023-D-MHP-onlinestorestoexplore-header.png" alt="" />
@@ -270,8 +268,8 @@ const MenHomePage = () => {
             {B21.map(el => (<>
               <div style={{ textAlign: 'center' }}>
 
-              <NavLink to={el.nav}>
-                <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
+                <NavLink to={el.nav}>
+                  <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
                 </NavLink>
                 <div style={{ padding: '5px' }}>
                   <img style={{ height: '250px', width: '220px' }} key={el.id} alt="" src={el.photo} />
@@ -282,6 +280,7 @@ const MenHomePage = () => {
           </div></div>
       </Popup>
     </>
+
   )
 }
 

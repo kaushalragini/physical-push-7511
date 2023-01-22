@@ -10,13 +10,16 @@ import { ChakraProvider } from "@chakra-ui/react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AuthContextProvider from "./Context/AuthContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <ChakraProvider>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
+        <AuthContextProvider>
+          <App />
+        </AuthContextProvider>
       </Provider>
     </BrowserRouter>
   </ChakraProvider>

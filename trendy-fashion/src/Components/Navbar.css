@@ -57,9 +57,10 @@ li {
 #NavBotLi {
   display: flex;
   /* flex-direction: row; */
-  gap: 10px;
+  gap: 30px;
   position: relative;
   left: "50px";
+  
 }
 #NavBotLi li {
   list-style: none;
@@ -72,7 +73,7 @@ label:hover {
 #NavBotLi input {
   width: 80%;
   border-radius: 15px;
-  height: 130%;
+  /* height: 130%; */
 }
 #NavbotList:hover {
   font-weight: bold;

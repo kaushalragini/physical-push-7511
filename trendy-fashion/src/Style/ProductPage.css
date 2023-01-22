@@ -1,21 +1,22 @@
 .ProductPageDiv {
-  border: 1px solid black;
+  padding: auto;
   display: flex;
   justify-content: space-around;
 }
 .filterDiv {
   width: 20%;
-  border: 1px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .DataCardDiv {
   width: 100%;
-  border: 1px solid black;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .ProNav {
-  border: 1px solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 40px;
 }

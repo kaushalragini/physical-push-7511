@@ -8,7 +8,7 @@ import {
   Box
 } from '@chakra-ui/react'
 import SeprateCategory from './SeprateCategory'
-import { useSearchParams, useParams, ScrollRestoration, useLocation } from 'react-router-dom';
+import { useSearchParams, useParams, useLocation } from 'react-router-dom';
 import { getBrandData } from "../utils";
 const Filter = () => {
   const { param } = useParams();
@@ -18,9 +18,10 @@ const Filter = () => {
   const initSort = searchParams.getAll('sort');
   const [sortBy, setSortBy] = useState(initSort || "")
   const [category, setCategory] = useState(initialCategory || []);
-  const [] = useState()
-  const [lowDiscount, setLowDiscount] = useState(0);
-  const [highDiscount, setHighDiscount] = useState(0);
+  const [discountLte, setDiscountLte] = useState([]);
+  const [discountGte, setDiscountGte] = useState([]);
+  const [priceLte, setPriceLte] = useState([]);
+  const [priceGte, setPriceGte] = useState([]);
 
   const handleFilterCheckbox = (e) => {
     e.preventDefault();
@@ -38,21 +39,82 @@ const Filter = () => {
     const limits = e.target.value.split("-");
     const lower = limits[0];
     const higher = limits[1];
-    setLowDiscount(lower);
-    setHighDiscount(higher);
+    let lte = [...discountLte];
+    if (lte.includes(higher)) {
+      let index = lte.indexOf(higher);
+      lte.splice(index, 1);
+    }
+    else {
+      lte.push(higher);
+    }
+
+    let gte = [...discountGte];
+    if (gte.includes(lower)) {
+      let index = gte.indexOf(lower);
+      gte.splice(index, 1);
+    }
+    else {
+      gte.push(lower);
+    }
+    setDiscountGte(gte);
+    setDiscountLte(lte);
+  }
+
+  const priceChangeHandler = (e) => {
+    const limits = e.target.value.split("-");
+    const lower = limits[0];
+    const higher = limits[1];
+
+    let lte = [...priceLte];
+    let gte = [...priceGte];
+    if (lte.includes(higher)) {
+      let index = lte.indexOf(higher);
+      lte.splice(index, 1);
+    }
+    else {
+      lte.push(higher);
+    }
+
+    if (gte.includes(lower)) {
+      let index = gte.indexOf(lower);
+      gte.splice(index, 1);
+    }
+    else {
+      gte.push(lower);
+    }
+    setPriceLte(lte);
+    setPriceGte(gte);
   }
 
   const menData = getBrandData(param);
 
 
   useEffect(() => {
+    console.log("filter => ", discountGte, discountLte, priceGte, priceLte);
     let params = {};
+    if (discountGte.length > 0) {
+      let lowest = discountGte.sort(function (a, b) { return a - b });
+      params.discount_gte = lowest[0];
+    }
+    if (discountLte.length > 0) {
+      let highest = discountLte.sort(function (a, b) { return a - b });
+      params.discount_lte = highest[highest.length - 1];
+    }
+    if (priceGte.length > 0) {
+      let lowest = priceGte.sort(function (a, b) { return a - b });
+      console.log(lowest);
+      params.price_gte = lowest[0];
+    }
+    if (priceLte.length > 0) {
+      let highest = priceLte.sort(function (a, b) { return a - b });
+      console.log(highest);
+      params.price_lte = highest[highest.length - 1];
+    }
+
     params.brandName = category;
     sortBy && (params.sort = sortBy);
-    lowDiscount && (params.discount_gte = lowDiscount);
-    highDiscount && (params.discount_lte = highDiscount);
     setSearchParams(params);
-  }, [category, lowDiscount]);
+  }, [category, discountLte, discountGte, priceLte, priceGte]);
   return (
     <div className='fliterDiv'>
       Filter
@@ -154,7 +216,7 @@ const Filter = () => {
                   </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                  <div>
+                  <div >
                     <input type="checkbox" />
                     <label >menFootwear</label>
                   </div>
@@ -192,23 +254,23 @@ const Filter = () => {
                 </h2>
                 <AccordionPanel pb={4}>
                   <div>
-                    <input type="checkbox" />
+                    <input type="checkbox" onChange={priceChangeHandler} value="0-500" />
                     <label >Below Rs.500</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
+                    <input type="checkbox" onChange={priceChangeHandler} value="500-1000" />
                     <label >Rs.500-1000</label>
                   </div>
                   <div>
-                    <input type="checkbox" />
+                    <input type="checkbox" onChange={priceChangeHandler} value="1001-1500" />
                     <label >Rs.1001-1500 </label>
                   </div>
                   <div>
-                    <input type="checkbox" />
+                    <input type="checkbox" onChange={priceChangeHandler} value="1501-2000" />
                     <label >Rs.1501-2000 </label>
                   </div>
                   <div>
-                    <input type="checkbox" />
+                    <input type="checkbox" onChange={priceChangeHandler} value="2001-2500" />
                     <label >Rs.2001-2500</label>
                   </div>
 
@@ -246,7 +308,7 @@ const Filter = () => {
                     <input type="checkbox" onChange={discountChangeHandler} value="51-60" />
                     <label>51-60%</label>
                   </div>
-                  <div>
+                  <div >
                     <input type="checkbox" onChange={discountChangeHandler} value="60-100" />
                     <label > more than 60%</label>
                   </div>
