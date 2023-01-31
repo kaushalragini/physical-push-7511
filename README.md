@@ -5,7 +5,7 @@ With the trendiest, freshest, and most unique styles from across India and the w
 # Trendy-Fashion
   # Ragini Kaushal
   # Ujjawal
-  # Swapnil
+  # [Swapnil Chavan](https://github.com/Swapnilchavan13)
   # Chandra Shekhar
   # MD Kamran Khan
 <hr/>
