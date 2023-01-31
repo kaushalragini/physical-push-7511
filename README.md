@@ -1,11 +1,10 @@
 # Trendy-Fashion
 With the trendiest, freshest, and most unique styles from across India and the world, Trendy-Fashion invites you to express your personal style fearlessly, and with a confidence and optimism that cannot be easily shaken.
-[Clone link](https://chavanswapnil822-gmail-com-makes-great-sites-e13e2.netlify.app/)
 <hr/>
 # Trendy-Fashion
   # Ragini Kaushal
   # Ujjawal
-  # [Swapnil Chavan](https://github.com/Swapnilchavan13)
+  [Swapnil Chavan](https://github.com/Swapnilchavan13)
   # Chandra Shekhar
   # MD Kamran Khan
 <hr/>
