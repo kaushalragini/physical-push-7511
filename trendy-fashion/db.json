@@ -14882,6 +14882,106 @@
         "Track",
         "Pants"
       ]
+    },
+    {
+      "id": "469258181002",
+      "brandName": "NIKE",
+      "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe0/-286Wx359H-469258181-grey-MODEL.jpg",
+      "images": [
+        {
+          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374eff4/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
+        },
+        {
+          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
+          "format": "mobileProductListingImage",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe4/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
+        },
+        {
+          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
+          "format": "productGrid3ListingImage",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe0/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
+        }
+      ],
+      "discount": "10% off",
+      "current_price": {
+        "currencyIso": "INR",
+        "priceType": "BUY",
+        "formattedValue": "Rs. 5,396.00",
+        "displayformattedValue": "Rs. 5,396",
+        "value": 5396
+      },
+      "prev_price": {
+        "currencyIso": "INR",
+        "priceType": "BUY",
+        "formattedValue": "Rs. 5,995.00",
+        "displayformattedValue": "Rs. 5,995",
+        "value": 5995
+      },
+      "product_name": "Court Vision Mid NN Lace-Up Sneakers",
+      "detail_page_url": "/nike-court-vision-mid-nn-lace-up-sneakers/p/469258181_grey",
+      "secondary_category": "Footwear",
+      "primary_category": [
+        "Court",
+        "Vision",
+        "Mid",
+        "NN",
+        "Lace-Up",
+        "Sneakers"
+      ]
+    },
+    {
+      "id": "464879086002",
+      "brandName": "Bullmer",
+      "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20230112/LT6N/63c03a40aeb269c651dc4973/-286Wx359H-464879086-black-MODEL.jpg",
+      "images": [
+        {
+          "altText": "Bullmer Tan Graphic Print Hooded T-shirt",
+          "format": "product",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20230112/LT6N/63c03a40aeb269c651dc4982/bullmer_tan_graphic_print_hooded_t-shirt.jpg"
+        },
+        {
+          "altText": "Bullmer Tan Graphic Print Hooded T-shirt",
+          "format": "mobileProductListingImage",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20230112/LT6N/63c03a40aeb269c651dc4976/bullmer_tan_graphic_print_hooded_t-shirt.jpg"
+        },
+        {
+          "altText": "Bullmer Tan Graphic Print Hooded T-shirt",
+          "format": "productGrid3ListingImage",
+          "imageType": "PRIMARY",
+          "url": "https://assets.ajio.com/medias/sys_master/root/20230112/LT6N/63c03a40aeb269c651dc4973/bullmer_tan_graphic_print_hooded_t-shirt.jpg"
+        }
+      ],
+      "discount": "80% off",
+      "current_price": {
+        "currencyIso": "INR",
+        "priceType": "BUY",
+        "formattedValue": "Rs. 398.00",
+        "displayformattedValue": "Rs. 398",
+        "value": 398
+      },
+      "prev_price": {
+        "currencyIso": "INR",
+        "priceType": "BUY",
+        "formattedValue": "Rs. 1,999.00",
+        "displayformattedValue": "Rs. 1,999",
+        "value": 1999
+      },
+      "product_name": "Graphic Print Hooded T-shirt",
+      "detail_page_url": "/bullmer-graphic-print-hooded-t-shirt/p/464879086_black",
+      "secondary_category": "Clothing",
+      "primary_category": [
+        "Graphic",
+        "Print",
+        "Hooded",
+        "T-shirt"
+      ]
     }
   ]
 }
