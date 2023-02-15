@@ -12,7 +12,7 @@ With the trendiest, freshest, and most unique styles from across India and the w
 <ul>
 <li>Dynamic Navbar.
 </li>
-<li>ogin and Sign up Feature.
+<li>Login and Sign up Feature.
 </li>
 <li>Product Page with interactive Scrollbars
 </li>
