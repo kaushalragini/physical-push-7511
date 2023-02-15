@@ -62,13 +62,13 @@ const WomenHomePage = () => {
 
       })
   }, [])
-  ///////////////////////////////////////////////////////////////////////////////////////////
+  
 
   return (
     <>
 
       <div>
-        <img src="https://assets.ajio.com/cms/AJIO/WEB/D-MainBanner-SectionHeaderStrip.gif" alt="" />
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/D-MainBanner-SectionHeaderStrip.gif" width="100%" alt="" />
       </div>
 
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>

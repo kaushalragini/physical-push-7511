@@ -9,16 +9,17 @@ const SearchInput = () => {
       <VStack alignItems="flex-start" className="dropdown" w="400"  >
         <ul>
           <Text fontSize="18px" >Top Searches</Text>
-          <Link to="/men/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px", paddingRight: "200px" }}  >Shoes</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Jackets</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Jeans</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Joggers</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Kurti</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Boots</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Shirts</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Top</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Heals</li></Link>
-          <Link to="#" >  <li style={{ borderBottom: "1px solid gray", fontSize: "20px" }}  >Sneaker</li></Link>
+          <Link to="/men/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px", paddingRight: "200px" }}  >Shoes</li></Link>
+          <Link to="/men/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Jackets</li></Link>
+          <Link to="/men/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Jeans</li></Link>
+          <Link to="/men/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Joggers</li></Link>
+          <Link to="/women/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Kurti</li></Link>
+          <Link to="/women/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Boots</li></Link>
+          <Link to="/women/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Boots</li></Link>
+          <Link to="/women/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Shirts</li></Link>
+          <Link to="/women/clothing" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Top</li></Link>
+          <Link to="/women/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Heals</li></Link>
+          <Link to="/women/footwear" >  <li style={{ borderBottom: "1px solid gray", fontSize: "15px" }}  >Sneaker</li></Link>
 
         </ul>
 

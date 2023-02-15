@@ -1,0 +1,43 @@
+img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s;
+  }
+  
+  
+  @media screen and (max-width: 1260px ) {
+      .imgdiv img{
+        max-width: 34%;
+      }
+      .imgdiv4 img{
+          max-width: 25%;
+      }
+  }
+   
+  .scrollbtn{
+          position: fixed;
+          border-radius: 50%;
+          font-size: 25px;
+          bottom: 40px;
+          height: 50px;
+          width: 50px;
+          right: 40px;
+          background-color:rgb(204, 195, 195);
+          color: #fff;
+          text-align: center;
+  }
+  .scrollbtn1 {
+    position: sticky;
+    border-radius: 50%;
+    margin-left: 1100px;
+    font-size: 10px;
+    bottom: 40px;
+    height: 50px;
+    width: 50px;
+    right: 40px;
+    background-color: rgb(204, 195, 195);
+    color: #fff;
+    text-align: center;
+  }
+  
+  

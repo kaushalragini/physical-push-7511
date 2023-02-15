@@ -1,10 +1,10 @@
 # Trendy-Fashion
 With the trendiest, freshest, and most unique styles from across India and the world, Trendy-Fashion invites you to express your personal style fearlessly, and with a confidence and optimism that cannot be easily shaken.
 <hr/>
-# Trendy-Fashio
+# Trendy-Fashion
   # Ragini Kaushal
   # Ujjawal
-  # Swapnil
+  #<a href="https://github.com/Swapnilchavan13">Swapnil Chavan</a>
   # Chandra Shekhar
   # MD Kamran Khan
 <hr/>
@@ -19,6 +19,7 @@ With the trendiest, freshest, and most unique styles from across India and the w
 <li>Dynamic Cart Page.
 </li>
 <li>Payment Page.</li>
+  <li>Admin Page </li>
 </ul>
 
 <h1>Landing Page</h1>
@@ -28,10 +29,13 @@ alt="xx" width=1000px height=400px/>
 
 
 <h1>Account Page</h1>
-<img src="https://i.imgur.com/iYdVdhi.png" width=1000px heoght=400px
-alt="xx"/>
-<p>Whenever an item is purchased we first need to create an account in the website and in this section we also need to provide some details to create the account and after creating we need to login for futher process</p>
 
-<h1>Productt Page</h1>
-<img src="" alt="" width=1000px height=400px/>
+<p>Whenever an item is purchased we first need to create an account in the website and in this section we also need to provide some details to create the account and after creating we need to login for futher process</p>
+<h1>Product Page</h1>
+<img width="1430" alt="Screenshot 2023-01-23 at 12 04 24 AM" src="https://user-images.githubusercontent.com/110046267/213933550-c463a34c-4e81-47d3-88ec-790a6228a977.png">
+
+<h1>Login Page</h1>
+<img width="1417" alt="Screenshot 2023-01-23 at 12 02 01 AM" src="https://user-images.githubusercontent.com/110046267/213933452-008a0c8b-3deb-4f79-aa91-14c7eaf0bbdd.png">
+<img width="1440" alt="Screenshot 2023-01-23 at 11 29 19 AM" src="https://user-images.githubusercontent.com/110046267/213974798-41497c22-7237-4df2-8466-0528865cba2b.png">
+
 <p> Whenver customer has to buy something they can buy the product according to their choices by visiting the Product Page</p>
