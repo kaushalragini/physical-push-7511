@@ -59,10 +59,10 @@ export default function ProductPage() {
         <Filter />
       </div>
       <div>
-        <div>HEADING SHOULD COME HERE</div>
+        <div>Product Page</div>
         <div className="ProNav">
-          <div>Price</div>
-          <div>grid</div>
+          <div>Items Found</div>
+          <div></div>
           <div>
             <ProductNav />
           </div>

@@ -1,99 +1,95 @@
-.cart div img{
-    margin-top: 50px;
-     width: 100%;
-     
- }
- .icons{
-     display: flex;
-     height: 150px;
-     background-color: #f8f8f8;
-   
- }
- 
- .cart1 div{
-    display: flex;
-   gap: 30px;
-   width: 170px;
-  
-   margin-left: 300px;
- }
- .icons{
-     display: flex;
-     height: 150px;
-     background-color: #f8f8f8;
-     margin-top: 120px;
- }
- .icons>div {
-   padding-bottom: 50px;
-     display: block;
-     margin: auto;
-     margin-left: 200px;
-  }
-  .icons div img {
-     margin-left: -20px;
-  }
-  
- .icons div h1{
-     font-size: 20px;
-     font-weight: 600;
-     margin-left:-60px ;
- }
- .CartCard{
-     display: flex;
- }
- .CartCard div:nth-child(1){
-     display: flex;
-    gap: 80px;
-    border: 1px solid red;
-    align-items:center;
-    justify-content: center;
-    width: 800px;
- }
- .CartCard div img{
-   
-   background-color:red;
-   width:200px ;
-     height: 100px;
- }
- .CartCard div p{
-    font-size: 14px;
-    width: 240px;
-    height: 37px;
- }
- .CartCard div h4{
-     width: 96px;
-     
-     height: 20px;
-     font-size: 16px;
-     background-color: #e1ecf1;
- }
- .order {
-     border: 1px solid red;
-     margin-left: 100px;
-     width: 300px;
-     height: 184px;
-     padding: 15px;
-     background-color: #fafafa;
- }
- .order h1{
-     font-size: 14px;
-     font-weight: 700;
-     font-family: lora;
- }
- .order p{
-     font-size: 14px;
-     font-weight: 400;
-     margin-top: 20px;
- }
- .order h3{
-     font-size: 14px;
-     font-family: inherit;
-     font-weight: 600;
- }
- .order button{
-     width: 300px;
-     height: 40px;
-     margin-top: 20px;
-     background-color: #d5a249;
- }
-  
+.cart div img {
+  margin-top: 50px;
+  width: 100%;
+}
+.icons {
+  display: flex;
+  height: 150px;
+  background-color: #f8f8f8;
+}
+
+.cart1 div {
+  display: flex;
+  gap: 30px;
+  width: 170px;
+
+  margin-left: 300px;
+}
+.icons {
+  display: flex;
+  height: 150px;
+  background-color: #f8f8f8;
+  margin-top: 120px;
+}
+.icons > div {
+  padding-bottom: 50px;
+  display: block;
+  margin: auto;
+  margin-left: 200px;
+}
+.icons div img {
+  margin-left: -20px;
+}
+
+.icons div h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: -60px;
+}
+.CartCard {
+  display: flex;
+}
+.CartCard div:nth-child(1) {
+  display: flex;
+  gap: 80px;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+}
+.CartCard div img {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+}
+.CartCard div p {
+  font-size: 14px;
+  width: 240px;
+  height: 37px;
+}
+.CartCard div h4 {
+  width: 96px;
+
+  height: 20px;
+  font-size: 16px;
+  background-color: #e1ecf1;
+}
+.order {
+  border: 1px solid red;
+  margin-left: 100px;
+  width: 300px;
+  height: 184px;
+  padding: 15px;
+  background-color: #fafafa;
+}
+.order h1 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: lora;
+}
+.order p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.order h3 {
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 600;
+}
+.order button {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: #d5a249;
+}

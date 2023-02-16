@@ -11,13 +11,6 @@ const CartCard = ({ id, imageUrl, brandName, images, prev_price }) => {
                 <button>-</button>
                 <h4>{prev_price.formattedValue}</h4>
             </div>
-            <div className={Style.order}>
-                <h1>Order Details</h1>
-                <p>Bag Total</p>
-                <p>Bag Discount</p>
-                <h3>Order Total</h3>
-                <Button>PROCEED TO SHIPPING</Button>
-            </div>
         </div>
     )
 }

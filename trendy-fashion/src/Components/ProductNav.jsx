@@ -15,6 +15,10 @@ const ProductNav = () => {
     const [order, setOrder] = useState("");
     const initialCategory = searchParams.getAll('brandName');
     const [category, setCategory] = useState(initialCategory || []);
+    const lowerPrice = searchParams.get("price_lte");
+    const higherPrice = searchParams.get("price_gte");
+    const lowerDis = searchParams.get("discount_lte");
+    const higherDis = searchParams.get("discount_gte");
     const location = useLocation();
     const handleSort = (e) => {
         const sort = e.target.value;
@@ -27,6 +31,18 @@ const ProductNav = () => {
         params.brandName = initialCategory;
         sortBy && (params.sort = sortBy);
         order && (params.order = order);
+        if (higherPrice) {
+            params["current_price.value_gte"] = higherPrice;
+        }
+        if (lowerPrice) {
+            params["current_price.value_lte"] = lowerPrice;
+        }
+        if (higherDis) {
+            params["discount_gte"] = higherDis;
+        }
+        if (lowerDis) {
+            params["discount_lte"] = lowerDis;
+        }
         setSearchParams(params);
     }, [sortBy, order, category])
     return (

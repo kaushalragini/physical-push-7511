@@ -7,7 +7,7 @@ import Slider from "react-slick";
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { callData } from '../utils';
-const SingleProductPage = (id) => {
+const SingleProductPage = ({ id }) => {
   const paramData = useParams();
   const param = paramData.param;
   const dispatch = useDispatch();
@@ -15,6 +15,7 @@ const SingleProductPage = (id) => {
   const productData = useSelector((store) => store.AppReducer);
   const [singleData, setSingleData] = useState({});
   let displayData = [];
+  console.log(paramData);
   switch (param) {
     default:
       displayData = [];
@@ -29,8 +30,6 @@ const SingleProductPage = (id) => {
       displayData = productData.menClothing;
       break;
   }
-  console.log(displayData);
-  // let [data, setData] = useState([])
   let navigate = useNavigate()
   const settings = {
     dots: false,
@@ -46,14 +45,24 @@ const SingleProductPage = (id) => {
     }
   }, [displayData.length, dispatch]);
   useEffect(() => {
+    console.log("useeffect");
     if (product_id) {
       const aa = displayData.find((item) => {
-        return +item.id === +product_id;
+        console.log("oooo => ", item.id, product_id);
+        return Number(item.id) === Number(product_id);
       })
-      console.log(aa);
       singleData && setSingleData(aa);
     }
-  }, [id]);
+  }, [product_id]);
+
+  const addToCartHandler = () => {
+    const payload = singleData;
+    axios.post(`http://localhost:8080/shoppingCart`, payload)
+      .then((res) => {
+        console.log(res.data);
+      })
+    navigate(`/product/${product_id}`);
+  }
 
   return (
     <div>
@@ -62,12 +71,11 @@ const SingleProductPage = (id) => {
           JSON.stringify(singleData) !== "{}" &&
           <div key={singleData.id} className={Style.Product}>
             <div >
-              <img src={singleData.imageUrl} alt="xx" />
-              {console.log("img", singleData.imageUrl)}
+              <img src={singleData?.imageUrl !== "" ? singleData.imageUrl : ""} alt="xx" />
             </div>
             <div >
               <h1>{singleData.brandName}</h1>
-              <h3>{singleData.images[0].altText}</h3>
+              {/* <h3>{singleData.images.length > 0 && singleData.images[0].altText}</h3> */}
               <p>{singleData.prev_price.formattedValue}</p>
               <h2>MRP: (72% off)</h2>
               <h4>Price inclusive of all Taxes</h4>
@@ -85,7 +93,7 @@ const SingleProductPage = (id) => {
                 <p>9</p>
               </div>
               <div className={Style.button1}>
-                <button onClick={() => navigate(`/product/${id}`)} >
+                <button onClick={() => addToCartHandler()}>
                   ADD TO BAG</button>
                 <button >
                   SAVE TO WHISLIST</button>
