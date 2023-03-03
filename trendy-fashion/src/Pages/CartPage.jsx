@@ -5,19 +5,23 @@ import { useParams } from "react-router-dom";
 import CartCard from "../Components/CartCard";
 import { Button } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+
 const CartPage = () => {
-  let [data, setData] = useState([]);
+  const [data, setData] = useState([]);
   const [totalAmount, setTotalAmount] = useState(0);
   const [totalItem, setTotalItem] = useState(0);
   const [totalDiscount, setTotalDiscount] = useState(0);
-  let { id } = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
-  console.log(id)
+
   useEffect(() => {
     axios.get(`http://localhost:8080/shoppingCart`)
       .then((res) => {
         setData(res.data)
       })
+  }, [])
+
+  useEffect(() => {
     if (data) {
       setTotalItem(data.length);
       let amount = 0;
@@ -30,18 +34,23 @@ const CartPage = () => {
       setTotalAmount(amount);
       setTotalDiscount(discount);
     }
-  }, [data.length])
+  }, [data])
+
+  const deleteProduct = (productId) => {
+    const updatedData = data.filter(item => item.id !== productId);
+    setData(updatedData);
+  }
+
   return (
     <div className={Style.cart}>
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/1440x128-without%20CTA----.jpg" alt="" />
-
       </div>
       <div>
         <div>
           {data.map((el) => (
             <div key={el.id}>
-              <CartCard {...el} />
+              <CartCard {...el} onDelete={deleteProduct} />
             </div>
           ))}
         </div>
@@ -60,23 +69,23 @@ const CartPage = () => {
         <p>Bag Total : {totalItem}</p>
         <p><b>{`Bag Discount : ${parseFloat(totalDiscount).toFixed(2)} % OFF`}</b></p>
         <h3>Order Total : {parseFloat(totalAmount).toFixed(2)}</h3>
-        <Button onClick={() => navigate("/checkout")}>PROCEED TO SHIPPING</Button>
-      </div>
-      <div className={Style.icons}>
-        <div >
-          <img src="https://i.imgur.com/OOGqWGt.jpg" alt="" />
-          <h1>EASY EXCHANGE</h1>
+     </div>
+       <Button onClick={() => navigate("/checkout")}>PROCEED TO SHIPPING</Button>
+     <div className={Style.icons}>
+       <div >
+         <img src="https://i.imgur.com/OOGqWGt.jpg" alt="" />
+         <h1>EASY EXCHANGE</h1>
         </div>
-        <div>
-          <img src="https://i.imgur.com/HaljMRO.jpeg" alt="" />
-          <h1>100% HANDPICKED</h1>
-        </div>
-        <div>
-          <img src="https://i.imgur.com/qCbHuZt.jpg" alt="" />
+       <div>
+         <img src="https://i.imgur.com/HaljMRO.jpeg" alt="" />
+        <h1>100% HANDPICKED</h1>
+       </div>
+       <div>
+         <img src="https://i.imgur.com/qCbHuZt.jpg" alt="" />
           <h1>ASSUERD QUALITY</h1>
-        </div>
-      </div>
-    </div>
+       </div>
+     </div>
+   </div>
   )
 }
 

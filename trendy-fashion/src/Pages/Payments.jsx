@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 export default function Payments() {
   const inpu = {
     border: '1px solid black',
@@ -125,7 +125,9 @@ export default function Payments() {
             <label>Save this card securely</label>
             <br />
             <br />
+            <Link to="/menpage">
             <button style={{ backgroundColor: '#D5A249', fontSize: '13px', padding: '13px', color: 'white' }} onClick={payHandler}>PAY SECURELY</button>
+            </Link>
           </div>
         </div>
 

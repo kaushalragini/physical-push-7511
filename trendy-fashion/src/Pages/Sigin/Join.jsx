@@ -123,7 +123,6 @@ function Join() {
             <ModalCloseButton />
             <ModalBody pb={6}>
               <div className={style.head} >
-                <h1>Welcome to AJIO</h1>
                 <div >
                   <p>Join/Sign In using</p>
                 </div>
@@ -139,6 +138,7 @@ function Join() {
               </div>
               <FormControl>
                 <FormLabel style={{ marginTop: "50px" }}>Enter your number to Signup or Login</FormLabel>
+                <h1>Welcome to AJIO</h1>
                 <Input
                   ref={initialRef}
                   placeholder="Enter Your Phone Number*"
