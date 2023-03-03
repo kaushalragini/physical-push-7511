@@ -22,12 +22,12 @@ const HoverProfile = () => {
                     <Button style={{backgroundColor:"white",fontWeight:"400"}} className='profilebtn'onClick={() => {
                                     toggleAuth()
                                     navigate("/");
-                                }}>Ragini Kaushal</Button>
+                                }}>User</Button>
                 </PopoverTrigger>
                 <Portal>
                     <PopoverContent width="250px" paddingBottom="10px" >
                         <PopoverArrow />
-                        <PopoverHeader>Welcome Ragini !!</PopoverHeader>
+                        <PopoverHeader>Welcome User !!</PopoverHeader>
                         <PopoverCloseButton />
                         <PopoverBody>
                             <Stack>

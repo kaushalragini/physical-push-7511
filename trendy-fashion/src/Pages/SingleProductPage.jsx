@@ -14,6 +14,7 @@ const SingleProductPage = ({ id }) => {
   const product_id = paramData.param4;
   const productData = useSelector((store) => store.AppReducer);
   const [singleData, setSingleData] = useState({});
+  
   let displayData = [];
   console.log(paramData);
   switch (param) {
@@ -55,13 +56,16 @@ const SingleProductPage = ({ id }) => {
     }
   }, [product_id]);
 
+
   const addToCartHandler = () => {
     const payload = singleData;
     axios.post(`http://localhost:8080/shoppingCart`, payload)
       .then((res) => {
         console.log(res.data);
+        navigate(`/product/${product_id}`);
       })
-    navigate(`/product/${product_id}`);
+      navigate(`/product/${product_id}`);
+
   }
 
   return (
@@ -70,7 +74,7 @@ const SingleProductPage = ({ id }) => {
         {
           JSON.stringify(singleData) !== "{}" &&
           <div key={singleData.id} className={Style.Product}>
-            <div >
+            <div style={{width:'400px'}}>
               <img src={singleData?.imageUrl !== "" ? singleData.imageUrl : ""} alt="xx" />
             </div>
             <div >
