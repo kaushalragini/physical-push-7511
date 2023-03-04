@@ -4,19 +4,25 @@ import { useState, useEffect } from 'react';
 import ImageSlider, { Slide } from "react-auto-image-slider";
 import './HomePage.css';
 import Popup from 'reactjs-popup';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+
 const HomePage = () => {
+
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
   }, []);
+  ////////////////////////////////
   const hour = 13;
   const min = 50;
+
   const [sec, setSec] = useState(60);
+
   useEffect(() => {
     const timer =
       sec > 0 && setInterval(() => setSec(sec - 1), 1000);
     return () => clearInterval(timer);
   }, [sec]);
+  /////////////////////////////////
   const [B1, setB1] = useState([]);
   const [B2, setB2] = useState([]);
   const [B3, setB3] = useState([]);
@@ -42,50 +48,40 @@ const HomePage = () => {
   useEffect(() => {
     axios.get('http://localhost:8080/Banner')
       .then(response => {
-        console.log(response.data.Banner1)
-        console.log(response.data.Banner2)
+        console.log(response.data.Banner.Banner1)
+        console.log(response.data.Banner.Banner2)
 
-        setB1(response.data.Banner1)
-        setB2(response.data.Banner2)
-        setB3(response.data.Banner3)
-        setB4(response.data.Banner4)
-        setB5(response.data.Banner5)
-        setB6(response.data.Banner6)
-        setB7(response.data.Banner7)
-        setB8(response.data.Banner8)
-        setB9(response.data.Banner9)
-        setB10(response.data.Banner10)
-        setB11(response.data.Banner11)
-        setB12(response.data.Banner12)
-        setB13(response.data.Banner13)
-        setB14(response.data.Banner14)
-        setB15(response.data.Banner15)
-        setB16(response.data.Banner16)
-        setB17(response.data.Banner17)
-        setB18(response.data.Banner18)
-        setB19(response.data.Banner19)
-        setB20(response.data.Banner20)
-        setB21(response.data.Banner21)
+        setB1(response.data.Banner.Banner1)
+        setB2(response.data.Banner.Banner2)
+        setB3(response.data.Banner.Banner3)
+        setB4(response.data.Banner.Banner4)
+        setB5(response.data.Banner.Banner5)
+        setB6(response.data.Banner.Banner6)
+        setB7(response.data.Banner.Banner7)
+        setB8(response.data.Banner.Banner8)
+        setB9(response.data.Banner.Banner9)
+        setB10(response.data.Banner.Banner10)
+        setB11(response.data.Banner.Banner11)
+        setB12(response.data.Banner.Banner12)
+        setB13(response.data.Banner.Banner13)
+        setB14(response.data.Banner.Banner14)
+        setB15(response.data.Banner.Banner15)
+        setB16(response.data.Banner.Banner16)
+        setB17(response.data.Banner.Banner17)
+        setB18(response.data.Banner.Banner18)
+        setB19(response.data.Banner.Banner19)
+        setB20(response.data.Banner.Banner20)
+        setB21(response.data.Banner.Banner21)
       })
   }, [])
-
+  ///////////////////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
-
-<div>
-  <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Urgency74Hrs-LiveNow-1440x128.jpg" width="100%" alt="" />
-</div>
-
-      <div>
-        {/* <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Urgency74Hrs-LiveNow-1440x128.jpg" alt="" /> */}
-      </div>
-
-
       <ImageSlider effectDelay={800} autoPlayDelay={2000}>
         {B1.map(el => (
           <Slide >
-            <Link to="/men/clothing"><img style={{ height: '450px',width:"98%" }} key={el.id} alt="" src={el.photo} /></Link>
+            <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
           </Slide>)
         )}
       </ImageSlider>
@@ -95,65 +91,47 @@ const HomePage = () => {
         <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B2.map(el => (
             <Slide >
-
-              <img style={{ height: '100px',width:"98%" }} key={el.id} alt="" src={el.photo} />
-
-              <Link to="/men/clothing"><img style={{ height: '100px' }} key={el.id} alt="" src={el.photo} /></Link>
-
+              <img style={{ height: '100px' }} key={el.id} alt="" src={el.photo} />
             </Slide>)
           )}
         </ImageSlider>
       </div>
+
       <div>
         <h1 style={{ fontSize: '30px' }}>Ends in {hour} h {min} m {sec} s</h1>
       </div>
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/D-HeroDeals-SectionHeaderStripkjkf.gif" alt="" />
       </div>
+
+
       <div style={{ height: '100px' }}>
         <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B3.map(el => (
             <Slide >
-              <Link to="/women/clothing"><img style={{ height: '450px',width:"98%" }} key={el.id} alt="" src={el.photo} /></Link>
+              <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
             </Slide>)
           )}
         </ImageSlider>
       </div>
-      <Link to="/women/footwear">
-        <div style={{ marginTop: '380px' }}>
-          <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Fashionation-Coupon-header.gif" alt="" />
-        </div>
-      </Link>
-      <Link to="/men/footwear">
-        <div className='imgdiv' style={{ display: 'flex' }}>
-          <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-Extra30-480x6001.gif" alt="" />
-          <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-1950-480x6001.gif" alt="" />
-          <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-FootwearFiesta-480x6001.gif" alt="" />
-        </div>
-      </Link>
-      <Link to="/men/footwear">
-        <div>
-          <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Fashionation-Coupon-header.gif" alt="" />
-        </div>
-      </Link>
-      <Link to="/men/footwear">
-        <div style={{ height: '100px' }}>
-          <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
-            {B4.map(el => (
-              <Slide >
-                <Link to="/men/clothing"><img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} /></Link>
-              </Slide>)
-            )}
-          </ImageSlider>
-        </div>
-      </Link>
-      <Link to="/women/accessorise">
-        <div style={{ marginTop: '380px' }}>
-          <img src="https://assets.ajio.com/cms/AJIO/WEB/D-DailyBanner-SectionHeaderStrip.gif" alt="" />
-        </div>
-      </Link>
+
+      <div style={{ marginTop: '380px' }}>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Fashionation-Coupon-header.gif" alt="" />
+      </div>
+
+      <div className='imgdiv' style={{ display: 'flex' }}>
+        <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-Extra30-480x6001.gif" alt="" />
+        <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-1950-480x6001.gif" alt="" />
+        <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/D-FootwearFiesta-480x6001.gif" alt="" />
+      </div>
+
+      <div>
+        <img src="https://assets.ajio.com/cms/AJIO/WEB/UHP-D-Fashionation-Coupon-header.gif" alt="" />
+      </div>
+
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}>
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B4.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
@@ -168,27 +146,29 @@ const HomePage = () => {
 
 
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}/>
-
-        <Link to="/women/footwear"><ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
-
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B5.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
             </Slide>)
           )}
         </ImageSlider>
-        </Link>
       </div>
+
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-gamesonze-header.jpg" alt="" />
       </div>
+
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-gamesonze-scratchcard-GIF.gif" alt="" />
       </div>
+
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-header.jpg" alt="" />
       </div>
+
       <div className='imgdiv' style={{ display: 'flex' }}>
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-shopearn5cashback.jpg" alt="" />
         <img width='450px' src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-rewards-relianceone.jpg" alt="" />
@@ -221,7 +201,7 @@ const HomePage = () => {
       </div>
 
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}>
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B8.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
@@ -233,16 +213,21 @@ const HomePage = () => {
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-westernwear-header.jpg" alt="" />
       </div>
+
+
       <div className='imgdiv4' style={{ display: 'flex' }}>
         {B9.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
       </div>
+
       <div>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-dailymen-header.jpg" alt="" />
       </div>
+
+
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}>
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B10.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
@@ -257,7 +242,7 @@ const HomePage = () => {
 
 
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}>
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B11.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
@@ -265,6 +250,8 @@ const HomePage = () => {
           )}
         </ImageSlider>
       </div>
+
+
       <div style={{ marginTop: '380px' }}>
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-ethnicwear-header.jpg" alt="" />
       </div>
@@ -280,7 +267,7 @@ const HomePage = () => {
       </div>
 
       <div style={{ height: '100px' }}>
-        <ImageSlider style={{ border: '5px solid red', padding: '20px',width:"98%" }} effectDelay={600} autoPlayDelay={2000}>
+        <ImageSlider style={{ border: '5px solid red', padding: '20px' }} effectDelay={600} autoPlayDelay={2000}>
           {B13.map(el => (
             <Slide >
               <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
@@ -343,7 +330,7 @@ const HomePage = () => {
         <img src="https://assets.ajio.com/cms/AJIO/WEB/060123-D-UHP-home-header.jpg" alt="" />
       </div>
 
-      <div className='imgdiv4' style={{ display: 'flex' }}>
+      <div className='imgdiv4'  style={{ display: 'flex' }}>
         {B19.map(el => (
           <img style={{ height: '450px' }} key={el.id} alt="" src={el.photo} />
         ))}
@@ -385,8 +372,8 @@ const HomePage = () => {
             {B21.map(el => (<>
               <div style={{ textAlign: 'center' }}>
 
-                <NavLink to={el.nav}>
-                  <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
+              <NavLink to={el.nav}>
+                <h1 style={{ fontSize: '23px', marginBottom: '20px' }}>{el.title}</h1>
                 </NavLink>
                 <div style={{ padding: '5px' }}>
                   <img style={{ height: '250px', width: '220px' }} key={el.id} alt="" src={el.photo} />
@@ -396,6 +383,7 @@ const HomePage = () => {
             ))}
           </div></div>
       </Popup>
+      
     </>
   )
 }

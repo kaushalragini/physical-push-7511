@@ -17,9 +17,7 @@ const BasicUsage=()=> {
             <Box>
               <Button>FACEBOOK</Button>
             </Box>
-          </ModalBody>
-
-          
+          </ModalBody> 
         </ModalContent>
       </Modal>
     </Box>

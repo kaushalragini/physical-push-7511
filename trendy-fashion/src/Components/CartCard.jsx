@@ -1,29 +1,3 @@
-// import React from 'react'
-// import Style from "../Style/Cart.module.css"
-// import { Button } from "@chakra-ui/react"
-
-// const CartCard = ({ id, imageUrl, brandName, images, prev_price, onDelete }) => {
-//     const handleDelete = () => {
-//         onDelete(id);
-//     }
-
-//     return (
-//         <div className={Style.CartCard}>
-//             <div>
-//                 <img style={{ width: "100px" }} src={imageUrl} alt="xx" />
-//                 <p>{brandName}-{images[0].altText}</p>
-//                 <button>+</button>
-//                 <button>-</button>
-//                 <h4>{prev_price.formattedValue}</h4>
-//                 <Button onClick={handleDelete}>Delete</Button>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default CartCard
-
-
 import React from 'react';
 import { Button } from "@chakra-ui/react";
 import Style from "../Style/Cart.module.css";
