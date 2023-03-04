@@ -7,7 +7,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { callWomenData } from '../utils';
 import axios from 'axios';
-const SingleWomenProductPage = (id) => {
+
+const SingleWomenProductPage = () => {
     const paramData = useParams();
     const param = paramData.param;
     const dispatch = useDispatch();
@@ -51,7 +52,7 @@ const SingleWomenProductPage = (id) => {
             })
             singleData && setSingleData(aa);
         }
-    }, [id]);
+    }, [product_id, singleData]);
     const addToCartHandler = () => {
         const payload = singleData;
         axios.post(`http://localhost:8080/shoppingCart`, payload)
@@ -60,6 +61,8 @@ const SingleWomenProductPage = (id) => {
             })
         navigate(`/product/${product_id}`);
     }
+
+
     return (
         <div>
             <div>

@@ -39,10 +39,13 @@ export default function Checkout() {
                     <h3>Delivery Address</h3>
                     <p>We will deliver your order to this address</p>
 
-                    <div style={{ marginTop: '50px', marginLeft: '-40px' }}>
-                        <h3>Swapnil</h3>
-                        <p>Default <br />
-                            r26, n9,<br />raigad nagar,<br />aurangabad, maharashtra <br />india - 431003 <br />Phone : 9049127078</p>
+                    <div style={{ marginTop: '50px', marginLeft: '-40px',lineHeight:'40px', gap:'20px' }}>
+                        <h3>User</h3>
+                        
+                       <input style={{border:'1px solid black',padding:'6px'}} type="text" placeholder='Full Name' required/><br />
+                       <input style={{border:'1px solid black',padding:'6px'}} type="text" placeholder='Full Address' required/><br />
+                       <input style={{border:'1px solid black',padding:'6px'}} type="text" placeholder='Enter Pin' required />
+                    
                     </div>
                 </div>
             </div>

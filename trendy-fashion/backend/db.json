@@ -14830,57 +14830,6 @@
         "Bomber",
         "Jacket"
       ]
-    },
-    {
-      "id": "469258181002",
-      "brandName": "NIKE",
-      "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe0/-286Wx359H-469258181-grey-MODEL.jpg",
-      "images": [
-        {
-          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
-          "format": "product",
-          "imageType": "PRIMARY",
-          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374eff4/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
-        },
-        {
-          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
-          "format": "mobileProductListingImage",
-          "imageType": "PRIMARY",
-          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe4/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
-        },
-        {
-          "altText": "NIKE Grey Court Vision Mid NN Lace-Up Sneakers",
-          "format": "productGrid3ListingImage",
-          "imageType": "PRIMARY",
-          "url": "https://assets.ajio.com/medias/sys_master/root/20220907/8liG/63179da1aeb269dbb374efe0/nike_grey_court_vision_mid_nn_lace-up_sneakers.jpg"
-        }
-      ],
-      "discount": "10% off",
-      "current_price": {
-        "currencyIso": "INR",
-        "priceType": "BUY",
-        "formattedValue": "Rs. 5,396.00",
-        "displayformattedValue": "Rs. 5,396",
-        "value": 5396
-      },
-      "prev_price": {
-        "currencyIso": "INR",
-        "priceType": "BUY",
-        "formattedValue": "Rs. 5,995.00",
-        "displayformattedValue": "Rs. 5,995",
-        "value": 5995
-      },
-      "product_name": "Court Vision Mid NN Lace-Up Sneakers",
-      "detail_page_url": "/nike-court-vision-mid-nn-lace-up-sneakers/p/469258181_grey",
-      "secondary_category": "Footwear",
-      "primary_category": [
-        "Court",
-        "Vision",
-        "Mid",
-        "NN",
-        "Lace-Up",
-        "Sneakers"
-      ]
     }
   ]
 }

@@ -18,6 +18,7 @@ const CartPage = () => {
     axios.get(`http://localhost:8080/shoppingCart`)
       .then((res) => {
         setData(res.data)
+        console.log(res.data)
       })
   }, [])
 
@@ -37,8 +38,14 @@ const CartPage = () => {
   }, [data])
 
   const deleteProduct = (productId) => {
-    const updatedData = data.filter(item => item.id !== productId);
-    setData(updatedData);
+    axios.delete(`http://localhost:8080/shoppingCart/${productId}`)
+      .then(() => {
+        const updatedData = data.filter(item => item.id !== productId);
+        setData(updatedData);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   return (
