@@ -15,11 +15,14 @@ import Customer from '../Components/Customer'
 import Checkout from './Checkout'
 import Payments from "./Payments"
 import CartPage from './CartPage'
+import Otp from '../Pages/Sigin/Otp'
 // import HomePage1 from './trendyHome/HomePage1'
 const MainRoutes = () => {
     return (
         <Routes>
             <Route path='/' element={<HomePage />} />
+            <Route path='/otp' element={<Otp />} />
+            
             <Route path='/menpage' element={<MenHomePage />} />
             <Route path='/womenpage' element={<WomenHomePage />} />
             <Route path='/payment' element={""} />

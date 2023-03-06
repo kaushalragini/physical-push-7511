@@ -30,6 +30,7 @@
     "react-simple-image-slider": "^2.4.1",
     "react-slick": "^0.29.0",
     "reactjs-popup": "^2.0.5",
+    "reactstrap": "^9.1.6",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
     "slick-carousel": "^1.8.1",

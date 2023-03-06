@@ -4,7 +4,7 @@ import Join from './Join';
 const Sigin = () => {
   return (
     <Box>
-        <Join/>
+        <Join />
     </Box>
   )
 }
