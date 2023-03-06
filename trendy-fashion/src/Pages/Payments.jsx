@@ -107,17 +107,17 @@ export default function Payments() {
             <h2>Add New Card</h2><br />
 
             <h3>Card Number</h3>
-            <input style={{ border: '1px solid black', width: '400px' }} type="text" name="creditCard" value={formData.creditCard} placeholder='enter credit card number' />
+            <input style={{ border: '1px solid black', width: '400px' }} type="text" name="creditCard"  placeholder='enter credit card number' />
             <br />
             <br />
 
             <h3>Name on Card</h3>
-            <input style={{ border: '1px solid black', width: '400px' }} type="text" name="name" value={formData.name} placeholder='enter name' />
+            <input style={{ border: '1px solid black', width: '400px' }} type="text" name="name"  placeholder='enter name' />
             <br />
             <br />
 
             <h3>Expiration Date</h3>
-            <input style={{ border: '1px solid black', width: '400px' }} name="doe" value={formData.doe} type="date" />
+            <input style={{ border: '1px solid black', width: '400px' }} name="doe"  type="date" />
             <br />
             <br />
 

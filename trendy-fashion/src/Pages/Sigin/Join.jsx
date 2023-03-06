@@ -58,7 +58,7 @@ function Join() {
             LOGIN/SIGNUP
           </Button>
         ) : (
-          <Button style={{ backgroundColor: "red", color: "black" }}>MD Kamran Khan</Button>
+          <Button style={{ backgroundColor: "red", color: "black" }}>User</Button>
         )}
         <Modal
           className="loginModal"
@@ -111,9 +111,9 @@ function Join() {
           </Button>
         )}
         <Modal
+          isOpen={isOpen}
           initialFocusRef={initialRef}
           finalFocusRef={finalRef}
-          isOpen={isOpen}
           onClose={onClose}
         >
           <ModalOverlay />
@@ -166,3 +166,5 @@ function Join() {
   }
 }
 export default Join;
+
+
